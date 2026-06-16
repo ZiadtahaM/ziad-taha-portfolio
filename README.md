@@ -20,10 +20,6 @@ This portfolio serves as a central hub for my technical projects, demonstrating 
 *   Core: HTML5, CSS3, JavaScript (ES6+)
 *   Frameworks: Specialized in Angular, Node.js, and static web platforms.
 
-## Live Interaction
-
-View the full portfolio: [**https://ziadtaham.github.io/ziad-taha-portfolio/**](https://ziadtaham.github.io/ziad-taha-portfolio/)
-
 ---
 
 Transforming complex requirements into high-performance digital solutions.

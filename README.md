@@ -1,24 +1,29 @@
-# Ziad Taha – Senior Frontend Engineer & UI/UX Specialist
+# Ziad Taha
 
-Welcome to my professional portfolio. I am a dedicated software engineer specializing in building high-performance, visually stunning, and user-centric web applications. This repository showcases my expertise in clean architecture, responsive design, and modern frontend technologies.
+A professional portfolio showcasing expertise in senior frontend engineering and UI/UX design. This platform demonstrates high-performance web development through clean architecture and user-centric interaction.
 
-## 🚀 Key Expertise
+## Core Expertise
 
-*   **Frontend Mastery**: Expert-level HTML5, CSS3, and modern JavaScript/TypeScript.
-*   **Performance Optimization**: Focused on rapid load times, smooth animations, and optimized asset delivery.
-*   **UX-Driven Design**: Crafting intuitive interfaces that prioritize accessibility and user engagement.
-*   **Scalable Architecture**: Building modular, maintainable codebases that grow with the project.
+*   Technical Strategy: Designing modular and scalable frontend systems for high-traffic environments.
+*   Performance Engineering: Implementing advanced optimization techniques for rapid load times and smooth rendering.
+*   UX-Driven Implementation: Bridging the gap between complex requirements and intuitive, high-fidelity interfaces.
 
-## 🛠️ Technical Stack
+## Professional Experience
 
-*   **Core**: HTML, CSS, JavaScript (Vanilla & Modern ES6+)
-*   **Interaction**: Custom script-driven animations and UI logic.
-*   **Style**: Advanced CSS layouts, transitions, and responsive fluid design.
+This portfolio serves as a central hub for my technical projects, demonstrating mastery across a diverse range of technologies:
+*   Frontend Specialization: Advanced HTML5, CSS3, and JavaScript/TypeScript.
+*   Architectural Patterns: Clean code, MVC, and domain-driven design.
+*   Developer Operations (DevOps): CI/CD integration, technical documentation, and performance benchmarking.
 
-## 🌐 Live Portfolio
+## Stack
 
-Explore my work and journey here: [**View Live Portfolio**](https://ziadtaham.github.io/ziad-taha-portfolio/)
+*   Core: HTML5, CSS3, JavaScript (ES6+)
+*   Frameworks: Specialized in Angular, Node.js, and static web platforms.
+
+## Live Interaction
+
+View the full portfolio: [**https://ziadtaham.github.io/ziad-taha-portfolio/**](https://ziadtaham.github.io/ziad-taha-portfolio/)
 
 ---
 
-*Transforming complex requirements into elegant, high-performance digital experiences.*
+Transforming complex requirements into high-performance digital solutions.

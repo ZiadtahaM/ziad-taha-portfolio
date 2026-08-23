@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziad Taha — Senior Angular & Frontend System Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Spotlight Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Floating Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <span class="brand-badge">ZT</span>
+                <span class="brand-text">Ziad Taha</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-house"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-layer-group"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-laptop-code"></i> Projects</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav-cta">
+                    <span>Hire Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+
+        <div class="container hero-container">
+            <div class="hero-badge-wrapper">
+                <div class="status-pill">
+                    <span class="pulse-dot"></span>
+                    <span class="status-text">Available for High-Impact Projects</span>
+                    <span class="location-tag"><i class="fas fa-location-dot"></i> Alexandria, Egypt</span>
+                </div>
+            </div>
+
+            <h1 class="hero-title">
+                Crafting Scalable <br>
+                <span class="highlight-text" id="typedRole">Angular Architectures</span><br>
+                & High-Conversion UI
+            </h1>
+
+            <p class="hero-description">
+                Senior Frontend & Angular Specialist building enterprise Single Page Applications, high-conversion commercial platforms, and fullstack SaaS systems with ultra-fast Core Web Vitals.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#projects" class="btn btn-primary btn-magnetic">
+                    <i class="fas fa-grid-2"></i>
+                    <span>Explore Featured Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-magnetic">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Quick Chat</span>
+                </a>
+                <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-icon btn-magnetic" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ziad-taha-271216285" target="_blank" class="btn btn-icon btn-magnetic" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+            <!-- Live Metrics Counter Strip -->
+            <div class="metrics-strip">
+                <div class="metric-card">
+                    <div class="metric-number"><span class="counter" data-target="30">0</span>+</div>
+                    <div class="metric-label">Production Repos Shipped</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number"><span class="counter" data-target="35">0</span>%</div>
+                    <div class="metric-label">Average Latency Reduction</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number"><span class="counter" data-target="99">0</span>.8%</div>
+                    <div class="metric-label">Client CSAT Rating</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number"><span class="counter" data-target="100">0</span>%</div>
+                    <div class="metric-label">Modern TypeScript & RxJS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ENGINEERING PROFILE</span>
+                <h2 class="section-title">Bridging Clean Code & Visual Mastery</h2>
+                <p class="section-subtitle">Delivering high-performance digital products engineered for speed, conversion, and architectural longevity.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card-main">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm a Computer Science student at <strong>Alexandria University</strong> (Class of 2026) and an active engineering fellow in <strong>DEPI (Digital Egypt Pioneers Initiative)</strong> and <strong>ALX Software Engineering</strong>.
+                    </p>
+                    <p>
+                        I concentrate complexity behind elegant, robust interfaces. Whether architecting multi-tenant Angular enterprise portals with RxJS & Signals or crafting high-converting luxury storefronts, my code is clean, modular, and built to scale under production traffic.
+                    </p>
+
+                    <div class="about-pills">
+                        <span class="about-pill"><i class="fas fa-bolt"></i> Angular 15-18+ & Signals</span>
+                        <span class="about-pill"><i class="fas fa-cubes"></i> State Management & RxJS</span>
+                        <span class="about-pill"><i class="fas fa-server"></i> Node.js & NestJS REST APIs</span>
+                        <span class="about-pill"><i class="fas fa-gauge-high"></i> Core Web Vitals (98+ Score)</span>
+                    </div>
+                </div>
+
+                <div class="about-highlights-col">
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="highlight-info">
+                            <h4>Alexandria University</h4>
+                            <p>Bachelor of Computer Science (4th Year)</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-award"></i></div>
+                        <div class="highlight-info">
+                            <h4>DEPI & ALX Fellow</h4>
+                            <p>Intensive Angular & Systems Specialization</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="highlight-info">
+                            <h4>IEEE & STEAM Member</h4>
+                            <p>Active contributor in developer tech communities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Bento Grid -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CORE COMPETENCIES</span>
+                <h2 class="section-title">Technical Mastery & Stack</h2>
+                <p class="section-subtitle">Deep specialization in modern frontend architecture and fullstack systems.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento 1: Angular Core -->
+                <div class="bento-card bento-wide">
+                    <div class="bento-header">
+                        <i class="fab fa-angular bento-icon red"></i>
+                        <div>
+                            <h3>Enterprise Angular & Modern Frontend</h3>
+                            <p>Signals, Reactive RxJS streams, Standalone Components & Microfrontends</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag-item highlight">Angular 18+</span>
+                        <span class="tag-item">TypeScript 5</span>
+                        <span class="tag-item">RxJS & Observables</span>
+                        <span class="tag-item">Angular Signals</span>
+                        <span class="tag-item">NgRx & Store</span>
+                        <span class="tag-item">Router Guards</span>
+                        <span class="tag-item">Lazy Loading & OnPush</span>
+                        <span class="tag-item">Angular Material</span>
+                    </div>
+                </div>
+
+                <!-- Bento 2: React & 3D -->
+                <div class="bento-card">
+                    <div class="bento-header">
+                        <i class="fab fa-react bento-icon cyan"></i>
+                        <div>
+                            <h3>React & WebGL 3D</h3>
+                            <p>Three.js, Framer Motion, Next.js</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag-item">React 19</span>
+                        <span class="tag-item">Three.js / WebGL</span>
+                        <span class="tag-item">Framer Motion</span>
+                        <span class="tag-item">Tailwind CSS</span>
+                        <span class="tag-item">Radix / Shadcn</span>
+                    </div>
+                </div>
+
+                <!-- Bento 3: Backend & DB -->
+                <div class="bento-card">
+                    <div class="bento-header">
+                        <i class="fas fa-server bento-icon green"></i>
+                        <div>
+                            <h3>Backend & Database</h3>
+                            <p>Robust APIs and relational schemas</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag-item highlight">Node.js & Express</span>
+                        <span class="tag-item">NestJS</span>
+                        <span class="tag-item">MySQL / MariaDB</span>
+                        <span class="tag-item">Drizzle ORM & Prisma</span>
+                        <span class="tag-item">MongoDB / Mongoose</span>
+                    </div>
+                </div>
+
+                <!-- Bento 4: Performance & Tooling -->
+                <div class="bento-card bento-wide">
+                    <div class="bento-header">
+                        <i class="fas fa-gauge-simple-high bento-icon purple"></i>
+                        <div>
+                            <h3>Performance Optimization & Tooling</h3>
+                            <p>Sub-second First Contentful Paint, CI/CD, Git workflows & Cloudflare</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag-item">Lighthouse 95+ Audits</span>
+                        <span class="tag-item">Vite & esbuild</span>
+                        <span class="tag-item">Cloudflare Pages</span>
+                        <span class="tag-item">Git & GitHub Actions</span>
+                        <span class="tag-item">Figma to Code</span>
+                        <span class="tag-item">Postman / REST Spec</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO SHOWCASE</span>
+                <h2 class="section-title">Featured Production Projects</h2>
+                <p class="section-subtitle">Real-world applications with live interactive previews and clean architectures.</p>
+            </div>
+
+            <!-- Project Filter Controls -->
+            <div class="filter-wrapper">
+                <button class="filter-pill active" data-filter="all">All Projects</button>
+                <button class="filter-pill" data-filter="angular">Enterprise Angular</button>
+                <button class="filter-pill" data-filter="fullstack">Fullstack & SaaS</button>
+                <button class="filter-pill" data-filter="ecommerce">E-Commerce & Arabic RTL</button>
+                <button class="filter-pill" data-filter="creative">Creative & 3D</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="portfolioProjectsGrid">
+                
+                <!-- Project 1: OmniCRM -->
+                <div class="project-showcase-card" data-category="angular fullstack">
+                    <div class="project-card-header">
+                        <span class="project-type-badge angular"><i class="fab fa-angular"></i> Angular 18+</span>
+                        <span class="project-status-badge live">🟢 Live on Port 5174</span>
+                    </div>
+                    <h3 class="project-name">OmniCRM Enterprise Invoicing & Multi-Tenant Portal</h3>
+                    <p class="project-description">
+                        Comprehensive enterprise business suite with bilingual Arabic/English localization, live invoice PDF generation, customer CRM pipeline, product catalog, and dashboard analytics.
+                    </p>
+                    <div class="project-meta-pills">
+                        <span>Angular 18</span>
+                        <span>Tailwind CSS</span>
+                        <span>i18n Localization</span>
+                        <span>2,396 Lines</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="http://localhost:5174" target="_blank" class="btn btn-card-primary">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Open Live Portal
+                        </a>
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-card-secondary" title="View Source">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Portfolio-3D WebGL -->
+                <div class="project-showcase-card" data-category="creative fullstack">
+                    <div class="project-card-header">
+                        <span class="project-type-badge creative"><i class="fas fa-cube"></i> Three.js / WebGL</span>
+                        <span class="project-status-badge live">🟢 Live on Port 5175</span>
+                    </div>
+                    <h3 class="project-name">Portfolio 3D WebGL Creative Experience</h3>
+                    <p class="project-description">
+                        Visual developer portfolio featuring custom Three.js shaders, 3D Canvas camera interactions, Framer Motion choreography, and 9,000+ lines of production TypeScript.
+                    </p>
+                    <div class="project-meta-pills">
+                        <span>React 19</span>
+                        <span>Three.js</span>
+                        <span>Framer Motion</span>
+                        <span>9,029 Lines</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="http://localhost:5175" target="_blank" class="btn btn-card-primary">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Launch 3D Site
+                        </a>
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-card-secondary" title="View Source">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Akasia Luxury Organic Snacks -->
+                <div class="project-showcase-card" data-category="ecommerce">
+                    <div class="project-card-header">
+                        <span class="project-type-badge ecommerce"><i class="fas fa-store"></i> Luxury Storefront</span>
+                        <span class="project-status-badge live">🟢 Live on Port 5001</span>
+                    </div>
+                    <h3 class="project-name">أكاسيا — الفخامة التي تداوي (Akasia Luxury)</h3>
+                    <p class="project-description">
+                        High-converting luxury dark-gold Arabic organic snacks e-commerce landing page with interactive slide-over cart, product detail modals, customer reviews, and FAQ accordion.
+                    </p>
+                    <div class="project-meta-pills">
+                        <span>Arabic RTL</span>
+                        <span>Interactive Cart</span>
+                        <span>Modal Windows</span>
+                        <span>1,650 Lines</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="http://localhost:5001" target="_blank" class="btn btn-card-primary">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Open Storefront
+                        </a>
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-card-secondary" title="View Source">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: As-Shifa Medical Records -->
+                <div class="project-showcase-card" data-category="angular fullstack">
+                    <div class="project-card-header">
+                        <span class="project-type-badge health"><i class="fas fa-hospital"></i> Healthcare System</span>
+                        <span class="project-status-badge live">🟢 Live on Port 5002</span>
+                    </div>
+                    <h3 class="project-name">As-Shifa Clinical Health Records (EHR)</h3>
+                    <p class="project-description">
+                        Secure medical hospital records management system with role-based staff logins (Doctor, Nurse, Admin), patient electronic health records, prescription management, and appointment bookings.
+                    </p>
+                    <div class="project-meta-pills">
+                        <span>Role-Based Auth</span>
+                        <span>Prescriptions</span>
+                        <span>Patient Search</span>
+                        <span>2,290 Lines</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="http://localhost:5002" target="_blank" class="btn btn-card-primary">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Open Medical App
+                        </a>
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-card-secondary" title="View Source">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Tradex Financial Brokerage -->
+                <div class="project-showcase-card" data-category="fullstack">
+                    <div class="project-card-header">
+                        <span class="project-type-badge fintech"><i class="fas fa-chart-line"></i> FinTech Brokerage</span>
+                        <span class="project-status-badge live">🟢 Live on Port 5003</span>
+                    </div>
+                    <h3 class="project-name">Tradex Financial Trading Platform</h3>
+                    <p class="project-description">
+                        High-tech trading brokerage web application featuring live ticker simulation, asset search, service tier breakdown, and lead capture forms with dark FinTech styling.
+                    </p>
+                    <div class="project-meta-pills">
+                        <span>FinTech UI</span>
+                        <span>Live Ticker</span>
+                        <span>Lead Forms</span>
+                        <span>2,592 Lines</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="http://localhost:5003" target="_blank" class="btn btn-card-primary">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Open Tradex
+                        </a>
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-card-secondary" title="View Source">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: FlowDesk Egypt -->
+                <div class="project-showcase-card" data-category="fullstack">
+                    <div class="project-card-header">
+                        <span class="project-type-badge saas"><i class="fas fa-building"></i> B2B Workspace SaaS</span>
+                        <span class="project-status-badge ready">⚡ 12 Modules Ready</span>
+                    </div>
+                    <h3 class="project-name">FlowDesk Egypt — Workspace Booking & CRM</h3>
+                    <p class="project-description">
+                        Multi-module Coworking & Office Space management SaaS with 12 complete page views: Admin dashboard, Booking scheduler, CRM pipeline, Notifications, and Onboarding.
+                    </p>
+                    <div class="project-meta-pills">
+                        <span>React 19</span>
+                        <span>Drizzle ORM</span>
+                        <span>MySQL (3306)</span>
+                        <span>12 Full Pages</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-card-primary">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="github-cta-center">
+                <a href="https://github.com/ZiadtahaM" target="_blank" class="btn btn-github-large">
+                    <i class="fab fa-github"></i>
+                    <span>Explore 47+ Repositories on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Timeline Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CAREER MILESTONES</span>
+                <h2 class="section-title">Experience & Training</h2>
+                <p class="section-subtitle">Rigorous software engineering programs and real-world project deliveries.</p>
+            </div>
+
+            <div class="timeline-container">
+                
+                <div class="timeline-entry">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Angular Developer Fellow</h3>
+                                <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            </div>
+                            <span class="timeline-period">2024 — Present</span>
+                        </div>
+                        <p>
+                            Building production-grade single page applications using Angular 15-18+, TypeScript, and RxJS. Leading front-end architecture for enterprise capstone projects with strict state management and component reusability standards.
+                        </p>
+                        <div class="timeline-badges">
+                            <span>Angular 18</span>
+                            <span>TypeScript</span>
+                            <span>RxJS</span>
+                            <span>Component Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Fullstack & Frontend Trainee</h3>
+                                <h4>Route Academy & ALX Software Engineering</h4>
+                            </div>
+                            <span class="timeline-period">2023 — 2024</span>
+                        </div>
+                        <p>
+                            Completed intensive software engineering immersive programs. Deepened mastery of JavaScript ES6+, React, Angular, Bootstrap, Sass, responsive UI/UX principles, and RESTful API integrations.
+                        </p>
+                        <div class="timeline-badges">
+                            <span>React</span>
+                            <span>Angular</span>
+                            <span>REST APIs</span>
+                            <span>UI/UX Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>B.Sc. Computer Science</h3>
+                                <h4>Alexandria University</h4>
+                            </div>
+                            <span class="timeline-period">2022 — 2026</span>
+                        </div>
+                        <p>
+                            Senior year Computer Science undergraduate. Active in IEEE Student Branch and technical workshop cohorts focusing on data structures, algorithms, and web architecture.
+                        </p>
+                        <div class="timeline-badges">
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Software Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">START A CONVERSATION</span>
+                <h2 class="section-title">Let's Build Something Exceptional</h2>
+                <p class="section-subtitle">Have a project in mind or looking for a dedicated Angular & Fullstack Engineer? Reach out directly.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info-panel">
+                    <h3>Contact Information</h3>
+                    <p>I typically respond within a few hours. Available for remote contract roles and freelance projects worldwide.</p>
+
+                    <div class="contact-channels">
+                        <div class="channel-card" onclick="copyEmail()">
+                            <i class="fas fa-envelope channel-icon"></i>
+                            <div>
+                                <span class="channel-label">Email Address (Click to copy)</span>
+                                <span class="channel-value" id="emailVal">ziadtaha.business@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/201028785511" target="_blank" class="channel-card">
+                            <i class="fab fa-whatsapp channel-icon green"></i>
+                            <div>
+                                <span class="channel-label">WhatsApp Direct Chat</span>
+                                <span class="channel-value">+20 102 878 5511</span>
+                            </div>
+                        </a>
+
+                        <div class="channel-card">
+                            <i class="fas fa-location-dot channel-icon purple"></i>
+                            <div>
+                                <span class="channel-label">Base Location</span>
+                                <span class="channel-value">Alexandria, Egypt (UTC+3)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-row">
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ziad-taha-271216285" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/201028785511" target="_blank" class="social-icon-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="projectType">Project Scope</label>
+                                <select id="projectType" required>
+                                    <option value="angular-enterprise">Angular Enterprise SPA</option>
+                                    <option value="fullstack-saas">Fullstack SaaS Application</option>
+                                    <option value="landing-page">High-Conversion Landing Page</option>
+                                    <option value="performance">Speed & Performance Optimization</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Target Budget</label>
+                                <select id="budget">
+                                    <option value="500-1500">$500 - $1,500</option>
+                                    <option value="1500-3000" selected>$1,500 - $3,000</option>
+                                    <option value="3000-6000">$3,000 - $6,000</option>
+                                    <option value="6000+">$6,000+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" rows="4" required placeholder="Tell me about your goals, timeline, and tech stack requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message Directly</span>
+                        </button>
+                        <p id="formFeedback" class="form-feedback"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <p class="footer-copy">© 2026 Ziad Taha. All rights reserved.</p>
+                <p class="footer-sub">Engineered with modern TypeScript, CSS Grid, and zero AI-slop design.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Back to Top ↑</a>
+                <a href="https://github.com/ZiadtahaM" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ziad-taha-271216285" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

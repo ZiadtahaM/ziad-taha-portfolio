@@ -1130,3 +1130,12 @@ body {
         padding: 20px;
     }
 }
+
+.cs-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.cs-tab-btn { background: #1e1e2d; border: 1px solid #334155; color: #94a3b8; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; font-weight: bold; }
+.cs-tab-btn.active { background: #7C3AED; color: white; border-color: #7C3AED; }
+.cs-content { display: none; margin-top: 10px; font-size: 0.9rem; color: #cbd5e1; }
+.cs-content.active { display: block; }
+.cs-content h4 { margin-top: 10px; margin-bottom: 4px; color: #e2e8f0; font-size: 0.95rem; }
+.cs-content p { margin-bottom: 10px; line-height: 1.5; }
+.cs-content.ar { text-align: right; font-family: 'Cairo', Tahoma, Arial, sans-serif; }

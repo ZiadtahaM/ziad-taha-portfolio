@@ -1,5 +1,5 @@
 // ==========================================================================
-// Ziad Taha Portfolio — Interactive UI/UX Scripts & Motion
+// Ziad Taha Portfolio. Interactive UI/UX Scripts & Motion
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {

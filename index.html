@@ -1,48 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" data-color-scheme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziad Taha. Full-Stack Software Engineer &amp; System Architect</title>
-    <meta name="description" content="Technical portfolio and verified project dossier of Ziad Taha. Full-stack software engineer specializing in Angular, NestJS, TypeScript, PostgreSQL, and distributed web systems.">
+    <title>Ziad Taha — Full-Stack Software Engineer</title>
+    <meta name="description" content="Portfolio of Ziad Taha, full-stack software engineer based in Alexandria, Egypt. Angular, NestJS, TypeScript, PostgreSQL, and distributed web applications.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="technical-grid-bg" aria-hidden="true"></div>
-
-    <!-- Navigation Header -->
-    <header class="navbar" id="navbar">
-        <div class="nav-container">
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+        <div class="nav-wrapper">
             <a href="#home" class="nav-brand">
-                <span class="brand-badge">ZT</span>
-                <div class="brand-meta">
-                    <span class="brand-name">Ziad Taha</span>
-                    <span class="brand-status">Engineering Dossier</span>
-                </div>
+                <span class="brand-name">Ziad Taha</span>
+                <span class="brand-dot" title="Available for work"></span>
             </a>
 
-            <nav>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#skills" class="nav-link">Domains</a></li>
-                    <li><a href="#projects" class="nav-link">Case Studies</a></li>
-                    <li><a href="#delivery" class="nav-link">Track Record</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
+            <nav class="nav-links" id="navMenu">
+                <a href="#work" class="nav-item">Work</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#skills" class="nav-item">Stack</a>
+                <a href="#delivery" class="nav-item">Track Record</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </nav>
 
-            <div class="nav-actions">
-                <a href="#contact" class="btn-nav-action">
-                    <span>Direct Inquiry</span>
-                    <i class="fas fa-arrow-right"></i>
+            <div class="nav-cta-wrap">
+                <a href="https://wa.me/201028785511" target="_blank" class="nav-cta-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Chat on WhatsApp</span>
                 </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
-                    <span></span>
+                <button class="nav-toggle" id="hamburger" aria-label="Toggle Menu">
                     <span></span>
                     <span></span>
                 </button>
@@ -53,809 +44,520 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero-section">
-            <div class="container">
-                <div class="hero-layout">
-                    <div class="hero-main">
-                        <div class="hero-eyebrow">
-                            <span>ALEXANDRIA, EGYPT</span>
-                            <span>/</span>
-                            <span>EELU CS 2026</span>
-                            <span>/</span>
-                            <span>DEPI FELLOW</span>
-                        </div>
-
-                        <h1 class="hero-title">Ziad Taha</h1>
-                        <p class="hero-role">Full-Stack Software Engineer &amp; System Architect</p>
-
-                        <p class="hero-prose">
-                            Designing and maintaining high-throughput web applications, relational schemas, and responsive interfaces. Two years of delivery across regional MENA client contracts and remote software teams. Focused on strict typing, predictable state management, and reliable deployment pipelines.
-                        </p>
-
-                        <div class="hero-actions">
-                            <a href="#projects" class="btn-primary">
-                                <i class="fas fa-terminal"></i>
-                                <span>Inspect Systems</span>
-                            </a>
-                            <a href="https://ziad-portfolio-3d.pages.dev" target="_blank" class="btn-secondary btn-highlight">
-                                <i class="fas fa-cube"></i>
-                                <span>WebGL 3D Portfolio</span>
-                            </a>
-                            <a href="https://wa.me/201028785511" target="_blank" class="btn-secondary">
-                                <i class="fab fa-whatsapp"></i>
-                                <span>WhatsApp Direct</span>
-                            </a>
-                            <a href="https://github.com/ZiadtahaM" target="_blank" class="btn-secondary">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub (124 Repos)</span>
-                            </a>
-                        </div>
+            <div class="content-container">
+                <div class="hero-intro">
+                    <div class="location-badge">
+                        <span class="live-pulse"></span>
+                        <span>Alexandria, Egypt &bull; UTC+2</span>
                     </div>
 
-                    <!-- Verified Ledger Panel -->
-                    <aside class="manifest-ledger" aria-label="Engineering Credentials Dossier">
-                        <div class="manifest-header">
-                            <span class="manifest-title">SYSTEM DOSSIER &amp; CREDENTIALS</span>
-                            <div class="manifest-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="manifest-body">
-                            <div class="manifest-row">
-                                <span class="manifest-label">AVAILABILITY</span>
-                                <span class="manifest-value manifest-badge">Open for Engineering Contracts</span>
-                            </div>
-                            <div class="manifest-row">
-                                <span class="manifest-label">BASE LOCATION</span>
-                                <span class="manifest-value">Alexandria, Egypt (UTC+2)</span>
-                            </div>
-                            <div class="manifest-row">
-                                <span class="manifest-label">ACADEMIC DEGREE</span>
-                                <span class="manifest-value">B.Sc. Computer Science &amp; IT (EELU 2026)</span>
-                            </div>
-                            <div class="manifest-row">
-                                <span class="manifest-label">GOVERNMENT FELLOWSHIP</span>
-                                <span class="manifest-value">DEPI (Digital Egypt Pioneers Initiative)</span>
-                            </div>
-                            <div class="manifest-row">
-                                <span class="manifest-label">COMMERCIAL CLIENTS</span>
-                                <span class="manifest-value">30+ Verified Deliveries (Mostaqel, Khamsat, Nafizly)</span>
-                            </div>
-                            <div class="manifest-row">
-                                <span class="manifest-label">CORE ARCHITECTURE</span>
-                                <span class="manifest-value">NestJS, Angular, TypeScript, PostgreSQL, Docker</span>
-                            </div>
-                            <div class="manifest-row">
-                                <span class="manifest-label">DIRECT PHONE / WHATSAPP</span>
-                                <span class="manifest-value">+20 102 878 5511</span>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
+                    <h1 class="hero-title">
+                        Building reliable web systems, distributed backends, and bilingual interfaces.
+                    </h1>
 
-        <!-- Technical Competencies Matrix -->
-        <section id="skills" class="section-wrapper">
-            <div class="container">
-                <header class="section-masthead">
-                    <span class="section-label">TECHNICAL COMPETENCIES</span>
-                    <h2 class="section-title">Engineering Domains &amp; System Stack</h2>
-                    <p class="section-desc">Practical specialization across server architectures, responsive clients, relational datastores, and commercial delivery management.</p>
-                </header>
+                    <p class="hero-lead">
+                        I am Ziad Taha, a full-stack engineer and senior computer science student at Egyptian E-Learning University (EELU 2026). Currently engineering backend microservices in NestJS and Java at Huma-volve, and an Angular fellow with the Digital Egypt Pioneers Initiative (DEPI). Over the past two years, I have designed and delivered 30+ production systems for clients across Egypt and the Gulf.
+                    </p>
 
-                <div class="domains-matrix">
-                    <article class="domain-card">
-                        <div class="domain-header">
-                            <span class="domain-code">DOM-01 // BACKEND</span>
-                            <h3 class="domain-title">Server Architecture &amp; APIs</h3>
-                        </div>
-                        <p class="domain-desc">Building decoupled, typed server architectures with strict boundary validation, token rotation, and asynchronous job processing.</p>
-                        <ul class="domain-specs">
-                            <li>NestJS modular dependency injection and guards</li>
-                            <li>Node.js with Express and Fastify gateways</li>
-                            <li>Java Spring Boot enterprise services</li>
-                            <li>JWT authentication with database token rotation</li>
-                            <li>Role-Based Access Control (RBAC) authorization</li>
-                        </ul>
-                        <div class="domain-tags">
-                            <span class="domain-tag">NestJS</span>
-                            <span class="domain-tag">Node.js</span>
-                            <span class="domain-tag">Java Spring</span>
-                            <span class="domain-tag">TypeScript</span>
-                            <span class="domain-tag">REST APIs</span>
-                            <span class="domain-tag">JWT / RBAC</span>
-                        </div>
-                    </article>
-
-                    <article class="domain-card">
-                        <div class="domain-header">
-                            <span class="domain-code">DOM-02 // FRONTEND</span>
-                            <h3 class="domain-title">Client Systems &amp; Realtime UI</h3>
-                        </div>
-                        <p class="domain-desc">Constructing single-page web applications with reactive data streams, sub-second route rendering, and bidirectional layout support.</p>
-                        <ul class="domain-specs">
-                            <li>Angular (v15 to 18+) with RxJS state pipelines</li>
-                            <li>React 19, Next.js App Router, and server components</li>
-                            <li>Bilingual English LTR and Arabic RTL layout mechanics</li>
-                            <li>Tailwind CSS design systems without layout shifts</li>
-                            <li>Accessibility compliance following WCAG 2.1 AA</li>
-                        </ul>
-                        <div class="domain-tags">
-                            <span class="domain-tag">Angular 18</span>
-                            <span class="domain-tag">RxJS</span>
-                            <span class="domain-tag">React 19</span>
-                            <span class="domain-tag">Next.js</span>
-                            <span class="domain-tag">Arabic RTL</span>
-                            <span class="domain-tag">Tailwind CSS</span>
-                        </div>
-                    </article>
-
-                    <article class="domain-card">
-                        <div class="domain-header">
-                            <span class="domain-code">DOM-03 // DATA &amp; INFRA</span>
-                            <h3 class="domain-title">Persistence &amp; Deployment</h3>
-                        </div>
-                        <p class="domain-desc">Configuring relational database schemas with indexed queries, transactional consistency, and containerized deployment pipelines.</p>
-                        <ul class="domain-specs">
-                            <li>PostgreSQL indexing strategies and connection pooling</li>
-                            <li>Redis caching with key-level TTL eviction policies</li>
-                            <li>Drizzle and TypeORM schema migrations</li>
-                            <li>Docker and Docker Compose multi-container networks</li>
-                            <li>Cloudflare Pages, Workers, and edge routing</li>
-                        </ul>
-                        <div class="domain-tags">
-                            <span class="domain-tag">PostgreSQL</span>
-                            <span class="domain-tag">Redis</span>
-                            <span class="domain-tag">MySQL</span>
-                            <span class="domain-tag">Docker</span>
-                            <span class="domain-tag">Cloudflare Pages</span>
-                            <span class="domain-tag">Drizzle ORM</span>
-                        </div>
-                    </article>
-
-                    <article class="domain-card">
-                        <div class="domain-header">
-                            <span class="domain-code">DOM-04 // OPERATIONS</span>
-                            <h3 class="domain-title">Freelance Delivery Governance</h3>
-                        </div>
-                        <p class="domain-desc">Managing commercial engineering contracts across MENA platforms from initial scoping to dispute-free banking settlement.</p>
-                        <ul class="domain-specs">
-                            <li>Scope of work contracts with explicit acceptance criteria</li>
-                            <li>Three-tier milestone breakdown with phased releases</li>
-                            <li>Mostaqel, Khamsat, and Nafizly account standing</li>
-                            <li>Egyptian bank wire transfers and Payoneer clearing</li>
-                            <li>Clear client communications with no technical jargon</li>
-                        </ul>
-                        <div class="domain-tags">
-                            <span class="domain-tag">Mostaqel</span>
-                            <span class="domain-tag">Khamsat</span>
-                            <span class="domain-tag">Nafizly</span>
-                            <span class="domain-tag">SOW Scoping</span>
-                            <span class="domain-tag">Milestone Delivery</span>
-                            <span class="domain-tag">Banking Clearing</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Verified Case Studies Section -->
-        <section id="projects" class="section-wrapper">
-            <div class="container">
-                <header class="section-masthead">
-                    <span class="section-label">PRODUCTION CASE STUDIES</span>
-                    <h2 class="section-title">Verified Engineering Systems</h2>
-                    <p class="section-desc">Production codebases with live deployments, on-disk interface captures, architectural rationale, and measurable outcomes.</p>
-                </header>
-
-                <div class="filter-bar" role="tablist" aria-label="Filter Projects">
-                    <button class="filter-pill active" data-filter="all">All Systems (6)</button>
-                    <button class="filter-pill" data-filter="fullstack">Full-Stack &amp; SaaS</button>
-                    <button class="filter-pill" data-filter="commerce">Portals &amp; Commerce</button>
-                    <button class="filter-pill" data-filter="graphics">3D &amp; WebGL</button>
-                </div>
-
-                <div class="dossiers-grid" id="portfolioProjectsGrid">
-
-                    <!-- Case Study 1: OmniRoute -->
-                    <article class="project-dossier-card" data-category="fullstack">
-                        <header class="dossier-header">
-                            <div class="dossier-meta-left">
-                                <span class="dossier-index">SYS-01</span>
-                                <h3 class="dossier-name">OmniRoute</h3>
-                                <span class="dossier-stack">TypeScript, Node.js, Redis, Docker, Electron</span>
-                            </div>
-                            <span class="dossier-role-tag">Lead System Architect</span>
-                        </header>
-
-                        <div class="dossier-body">
-                            <div class="dossier-viewport">
-                                <div class="viewport-chrome">
-                                    <div class="viewport-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <span class="viewport-url">https://github.com/ZiadtahaM/OmniRoute</span>
-                                </div>
-                                <div class="viewport-img-wrap">
-                                    <img src="assets/screenshots/omniroute.png" alt="OmniRoute AI Gateway Interface" loading="eager" />
-                                </div>
-                            </div>
-
-                            <div class="dossier-details">
-                                <div class="cs-tabs">
-                                    <button class="cs-tab-btn active" onclick="switchTab(this, 'en')">EN</button>
-                                    <button class="cs-tab-btn" onclick="switchTab(this, 'ar')">العربية</button>
-                                </div>
-
-                                <div class="cs-content en active">
-                                    <div class="spec-block">
-                                        <span class="spec-title">Problem Statement</span>
-                                        <p class="spec-text">Production systems integrating large language models frequently experience provider downtime, rate limits, and latency spikes when bound to a single API gateway.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Technical Architecture</span>
-                                        <p class="spec-text">Engineered a multi-provider reverse proxy with health check circuit breakers, dynamic fallback routing, and Redis semantic token caching across 42,000 lines of clean TypeScript code.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Measured Outcome</span>
-                                        <p class="spec-text">Maintained 99.98% operational uptime across 15,000 daily requests while lowering token expenditures by 28% through exact-match caching.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs-content ar">
-                                    <div class="spec-block">
-                                        <span class="spec-title">سياق المشكلة</span>
-                                        <p class="spec-text">تعاني المنصات المعتمدة على الذكاء الاصطناعي من انقطاعات مفاجئة وحدود قصوى في الطلبات عند الارتباط بمزود خدمة منفرد، مما يتسبب في تعطل العمليات الحيوية للمستخدمين.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">البنية البرمجية</span>
-                                        <p class="spec-text">تم تصميم بوابة وسيطة موزعة توفر تحويلا فوريا للمسارات عند حدوث تعثر في الاتصال، مع تخزين مؤقت للرموز وإدارة صارمة للاتصالات عبر 42 ألف سطر برمجي مكتوب بلغة TypeScript.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">النتيجة المقاسة</span>
-                                        <p class="spec-text">تحقيق استقرار تشغيلي بنسبة 99.98% لأكثر من 15 ألف طلب يومي، وخفض تكاليف الاستهلاك بنسبة 28% عبر التخزين المؤقت.</p>
-                                    </div>
-                                </div>
-
-                                <div class="dossier-actions">
-                                    <a href="https://github.com/ZiadtahaM/OmniRoute" target="_blank" class="dossier-btn primary">
-                                        <i class="fab fa-github"></i>
-                                        <span>Source Repository (42K LoC)</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Case Study 2: edu-pro Portal -->
-                    <article class="project-dossier-card" data-category="fullstack commerce">
-                        <header class="dossier-header">
-                            <div class="dossier-meta-left">
-                                <span class="dossier-index">SYS-02</span>
-                                <h3 class="dossier-name">edu-pro Portal</h3>
-                                <span class="dossier-stack">React, TypeScript, Cloudflare Workers, Drizzle ORM</span>
-                            </div>
-                            <span class="dossier-role-tag">Full-Stack Engineer</span>
-                        </header>
-
-                        <div class="dossier-body">
-                            <div class="dossier-viewport">
-                                <div class="viewport-chrome">
-                                    <div class="viewport-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <span class="viewport-url">https://edu-pro-portal.pages.dev</span>
-                                </div>
-                                <div class="viewport-img-wrap">
-                                    <img src="assets/screenshots/edu-pro-portal.png" alt="edu-pro Educational Portal Interface" loading="eager" />
-                                </div>
-                            </div>
-
-                            <div class="dossier-details">
-                                <div class="cs-tabs">
-                                    <button class="cs-tab-btn active" onclick="switchTab(this, 'en')">EN</button>
-                                    <button class="cs-tab-btn" onclick="switchTab(this, 'ar')">العربية</button>
-                                </div>
-
-                                <div class="cs-content en active">
-                                    <div class="spec-block">
-                                        <span class="spec-title">Problem Statement</span>
-                                        <p class="spec-text">Monolithic university examination platforms face heavy database connection lockups and high latency spikes during simultaneous student examination sessions.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Technical Architecture</span>
-                                        <p class="spec-text">Migrated critical routing to an edge serverless model on Cloudflare Workers, utilizing typed Drizzle queries, distributed assets, and optimistic user interface updates.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Measured Outcome</span>
-                                        <p class="spec-text">First contentful paint dropped below 600 milliseconds worldwide. The system sustained 1,200 simultaneous student exam submissions with zero database connection timeouts.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs-content ar">
-                                    <div class="spec-block">
-                                        <span class="spec-title">سياق المشكلة</span>
-                                        <p class="spec-text">تتعرض منصات الاختبارات المركزية لبطء حاد وتجمد في قواعد البيانات بسبب تدفق آلاف الطلاب في الدقيقة نفسها لتسليم الإجابات.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">البنية البرمجية</span>
-                                        <p class="spec-text">تم تشييد بنية طرفية موزعة على Cloudflare Workers مع استخدام Drizzle لاستعلامات البيانات الخفيفة، مما منع اختناق خوادم البيانات المركزية.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">النتيجة المقاسة</span>
-                                        <p class="spec-text">تسريع زمن التحميل الأولي إلى أقل من 600 مللي ثانية عالميا، واستيعاب 1200 تسليم امتحان متزامن دون أي فقد للبيانات.</p>
-                                    </div>
-                                </div>
-
-                                <div class="dossier-actions">
-                                    <a href="https://edu-pro-portal.pages.dev" target="_blank" class="dossier-btn primary">
-                                        <i class="fas fa-arrow-up-right-from-square"></i>
-                                        <span>Launch Live System</span>
-                                    </a>
-                                    <a href="https://github.com/ZiadtahaM" target="_blank" class="dossier-btn">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Case Study 3: Geenora Marketplace -->
-                    <article class="project-dossier-card" data-category="commerce">
-                        <header class="dossier-header">
-                            <div class="dossier-meta-left">
-                                <span class="dossier-index">SYS-03</span>
-                                <h3 class="dossier-name">Geenora Marketplace</h3>
-                                <span class="dossier-stack">Next.js, React, Tailwind CSS, PostgreSQL</span>
-                            </div>
-                            <span class="dossier-role-tag">Lead Frontend Engineer</span>
-                        </header>
-
-                        <div class="dossier-body">
-                            <div class="dossier-viewport">
-                                <div class="viewport-chrome">
-                                    <div class="viewport-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <span class="viewport-url">https://geenora-marketplace.pages.dev</span>
-                                </div>
-                                <div class="viewport-img-wrap">
-                                    <img src="assets/screenshots/geenora-marketplace.png" alt="Geenora E-Commerce Platform" loading="eager" />
-                                </div>
-                            </div>
-
-                            <div class="dossier-details">
-                                <div class="cs-tabs">
-                                    <button class="cs-tab-btn active" onclick="switchTab(this, 'en')">EN</button>
-                                    <button class="cs-tab-btn" onclick="switchTab(this, 'ar')">العربية</button>
-                                </div>
-
-                                <div class="cs-content en active">
-                                    <div class="spec-block">
-                                        <span class="spec-title">Problem Statement</span>
-                                        <p class="spec-text">Multi-vendor retail businesses required segregated merchant controls, synchronized stock ledger management across branches, and Arabic-first customer storefronts.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Technical Architecture</span>
-                                        <p class="spec-text">Built an isolated multi-tenant schema with transactional checkout reservations, server-rendered product catalogues, and responsive RTL interface styling.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Measured Outcome</span>
-                                        <p class="spec-text">Prevented stock inventory overselling during promotional traffic surges, delivering catalogue response times under 250 milliseconds across 10,000 product listings.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs-content ar">
-                                    <div class="spec-block">
-                                        <span class="spec-title">سياق المشكلة</span>
-                                        <p class="spec-text">احتاج التجار إلى لوحات تحكم مستقلة لكل بائع، مع مزامنة فورية لحركة المخزون وتوفير واجهات متوافقة كليا مع اللغة العربية وسلوك الشراء الإقليمي.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">البنية البرمجية</span>
-                                        <p class="spec-text">تصميم بنية قواعد بيانات متعددة المستأجرين مع عزل بيانات كل تاجر، وتطبيق حجز ذري للمنتجات لمنع نفاد المخزون الوهمي أثناء الدفع المتزامن.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">النتيجة المقاسة</span>
-                                        <p class="spec-text">إلغاء أخطاء البيع المزدوج في فترات العروض الترويجية، مع سرعة استجابة أقل من 250 مللي ثانية لأكثر من 10 آلاف صنف معروض.</p>
-                                    </div>
-                                </div>
-
-                                <div class="dossier-actions">
-                                    <a href="https://geenora-marketplace.pages.dev" target="_blank" class="dossier-btn primary">
-                                        <i class="fas fa-arrow-up-right-from-square"></i>
-                                        <span>Launch Live System</span>
-                                    </a>
-                                    <a href="https://github.com/ZiadtahaM" target="_blank" class="dossier-btn">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Case Study 4: As-Shifa EHR -->
-                    <article class="project-dossier-card" data-category="fullstack">
-                        <header class="dossier-header">
-                            <div class="dossier-meta-left">
-                                <span class="dossier-index">SYS-04</span>
-                                <h3 class="dossier-name">As-Shifa EHR</h3>
-                                <span class="dossier-stack">Angular 18, NestJS, RxJS, PostgreSQL</span>
-                            </div>
-                            <span class="dossier-role-tag">Systems Engineer</span>
-                        </header>
-
-                        <div class="dossier-body">
-                            <div class="dossier-viewport">
-                                <div class="viewport-chrome">
-                                    <div class="viewport-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <span class="viewport-url">https://asshifa-ehr-system.pages.dev</span>
-                                </div>
-                                <div class="viewport-img-wrap">
-                                    <img src="assets/screenshots/asshifa-ehr-system.png" alt="As-Shifa Clinical EHR Interface" loading="eager" />
-                                </div>
-                            </div>
-
-                            <div class="dossier-details">
-                                <div class="cs-tabs">
-                                    <button class="cs-tab-btn active" onclick="switchTab(this, 'en')">EN</button>
-                                    <button class="cs-tab-btn" onclick="switchTab(this, 'ar')">العربية</button>
-                                </div>
-
-                                <div class="cs-content en active">
-                                    <div class="spec-block">
-                                        <span class="spec-title">Problem Statement</span>
-                                        <p class="spec-text">Clinical facilities experience long intake queues and transcription errors from paper medical charts and decentralized prescription handling.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Technical Architecture</span>
-                                        <p class="spec-text">Implemented an auditable clinical platform with role-segregated portals for physicians, nursing staff, and pharmacy dispensers, backed by PostgreSQL row security.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Measured Outcome</span>
-                                        <p class="spec-text">Decreased patient intake check-in durations by 40% and removed handwritten prescription transcription errors across hospital departments.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs-content ar">
-                                    <div class="spec-block">
-                                        <span class="spec-title">سياق المشكلة</span>
-                                        <p class="spec-text">تؤدي السجلات الطبية الورقية إلى طول طوابير الانتظار في العيادات وحدوث أخطاء بشرية في نقل الجرعات والتشخيصات بين الأطباء والصيدليات.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">البنية البرمجية</span>
-                                        <p class="spec-text">بناء منصة سريرية مشفرة تعتمد على صلاحيات وصول مستقلة للأطباء والتمريض والصيادلة مع سجل تدقيق غير قابل للتعديل لكل وصفة طبية.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">النتيجة المقاسة</span>
-                                        <p class="spec-text">تقليص مدة تسجيل واستقبال المرضى بنسبة 40%، وتأمين السجلات الصحية الإلكترونية وفق معايير الخصوصية الرقمية.</p>
-                                    </div>
-                                </div>
-
-                                <div class="dossier-actions">
-                                    <a href="https://asshifa-ehr-system.pages.dev" target="_blank" class="dossier-btn primary">
-                                        <i class="fas fa-arrow-up-right-from-square"></i>
-                                        <span>Launch Live System</span>
-                                    </a>
-                                    <a href="https://github.com/ZiadtahaM" target="_blank" class="dossier-btn">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Case Study 5: Flowdesk Egypt -->
-                    <article class="project-dossier-card" data-category="fullstack">
-                        <header class="dossier-header">
-                            <div class="dossier-meta-left">
-                                <span class="dossier-index">SYS-05</span>
-                                <h3 class="dossier-name">Flowdesk Egypt</h3>
-                                <span class="dossier-stack">React, Node.js, Express, MySQL</span>
-                            </div>
-                            <span class="dossier-role-tag">Full-Stack Architect</span>
-                        </header>
-
-                        <div class="dossier-body">
-                            <div class="dossier-viewport">
-                                <div class="viewport-chrome">
-                                    <div class="viewport-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <span class="viewport-url">https://flowdesk-egypt.pages.dev</span>
-                                </div>
-                                <div class="viewport-img-wrap">
-                                    <img src="assets/screenshots/flowdesk-egypt.png" alt="Flowdesk Egypt Workspace CRM Interface" loading="eager" />
-                                </div>
-                            </div>
-
-                            <div class="dossier-details">
-                                <div class="cs-tabs">
-                                    <button class="cs-tab-btn active" onclick="switchTab(this, 'en')">EN</button>
-                                    <button class="cs-tab-btn" onclick="switchTab(this, 'ar')">العربية</button>
-                                </div>
-
-                                <div class="cs-content en active">
-                                    <div class="spec-block">
-                                        <span class="spec-title">Problem Statement</span>
-                                        <p class="spec-text">Coworking spaces in Egypt suffer from room reservation collisions, manual spreadsheet billing errors, and unorganized customer invoicing.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Technical Architecture</span>
-                                        <p class="spec-text">Constructed a reservation scheduler with atomic time-slot locks, programmatic invoice generation, and native Arabic-English interface toggles.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Measured Outcome</span>
-                                        <p class="spec-text">Removed duplicate room booking conflicts, shortening average reservation validation times from 15 minutes to under 30 seconds.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs-content ar">
-                                    <div class="spec-block">
-                                        <span class="spec-title">سياق المشكلة</span>
-                                        <p class="spec-text">تعاني مساحات العمل المشتركة في مصر من تضارب حجز غرف الاجتماعات، والأخطاء اليدوية في حساب الفواتير، وغياب نظام حجز ثنائي اللغة.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">البنية البرمجية</span>
-                                        <p class="spec-text">تطوير محرك حجز آني يعتمد على أقفال المعاملات الزمنية، وإصدار الفواتير الرقمية الفورية، مع التبديل التلقائي بين العربية والإنجليزية.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">النتيجة المقاسة</span>
-                                        <p class="spec-text">القضاء على تضارب الحجوزات تماما، وتقليص وقت إنهاء إجراءات الحجز والدفع من 15 دقيقة إلى أقل من 30 ثانية.</p>
-                                    </div>
-                                </div>
-
-                                <div class="dossier-actions">
-                                    <a href="https://flowdesk-egypt.pages.dev" target="_blank" class="dossier-btn primary">
-                                        <i class="fas fa-arrow-up-right-from-square"></i>
-                                        <span>Launch Live System</span>
-                                    </a>
-                                    <a href="https://github.com/ZiadtahaM" target="_blank" class="dossier-btn">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Case Study 6: Solar System 3D -->
-                    <article class="project-dossier-card" data-category="graphics">
-                        <header class="dossier-header">
-                            <div class="dossier-meta-left">
-                                <span class="dossier-index">SYS-06</span>
-                                <h3 class="dossier-name">Solar-System-3D</h3>
-                                <span class="dossier-stack">Three.js, WebGL, GLSL Shaders</span>
-                            </div>
-                            <span class="dossier-role-tag">Graphics Developer</span>
-                        </header>
-
-                        <div class="dossier-body">
-                            <div class="dossier-viewport">
-                                <div class="viewport-chrome">
-                                    <div class="viewport-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <span class="viewport-url">https://solar-system-3d-zt.pages.dev</span>
-                                </div>
-                                <div class="viewport-img-wrap">
-                                    <img src="assets/screenshots/solar-system-3d-zt.png" alt="Solar System 3D Simulation" loading="eager" />
-                                </div>
-                            </div>
-
-                            <div class="dossier-details">
-                                <div class="cs-tabs">
-                                    <button class="cs-tab-btn active" onclick="switchTab(this, 'en')">EN</button>
-                                    <button class="cs-tab-btn" onclick="switchTab(this, 'ar')">العربية</button>
-                                </div>
-
-                                <div class="cs-content en active">
-                                    <div class="spec-block">
-                                        <span class="spec-title">Problem Statement</span>
-                                        <p class="spec-text">Complex 3D graphics in the browser often trigger memory leaks and frame rate degradation below 30 FPS on mid-range hardware.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Technical Architecture</span>
-                                        <p class="spec-text">Engineered a WebGL render loop with custom fragment shaders, instanced geometries, and dynamic texture level-of-detail loading.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">Measured Outcome</span>
-                                        <p class="spec-text">Maintained 60 FPS across desktop and mobile screens, reducing total GPU memory utilization by 40%.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs-content ar">
-                                    <div class="spec-block">
-                                        <span class="spec-title">سياق المشكلة</span>
-                                        <p class="spec-text">تتسبب محاكاة الفضاء ثلاثية الأبعاد في استهلاك مفرط لذاكرة كروت الشاشة وهبوط معدل الإطارات إلى ما دون 30 إطارا على الأجهزة المتوسطة.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">البنية البرمجية</span>
-                                        <p class="spec-text">بناء حلقة تصيير ثلاثية الأبعاد باستخدام Three.js ومظللات GLSL مع إدارة دقيقة لموارد الذاكرة وتحميل الإكساءات حسب المسافة.</p>
-                                    </div>
-                                    <div class="spec-block">
-                                        <span class="spec-title">النتيجة المقاسة</span>
-                                        <p class="spec-text">الحفاظ على 60 إطارا في الثانية على الحواسيب والهواتف الذكية مع خفض استهلاك ذاكرة الرسوميات بنسبة 40%.</p>
-                                    </div>
-                                </div>
-
-                                <div class="dossier-actions">
-                                    <a href="https://solar-system-3d-zt.pages.dev" target="_blank" class="dossier-btn primary">
-                                        <i class="fas fa-arrow-up-right-from-square"></i>
-                                        <span>Launch Live System</span>
-                                    </a>
-                                    <a href="https://github.com/ZiadtahaM" target="_blank" class="dossier-btn">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Freelance Track Record & Settlement Section -->
-        <section id="delivery" class="section-wrapper">
-            <div class="container">
-                <header class="section-masthead">
-                    <span class="section-label">COMMERCIAL EXECUTION</span>
-                    <h2 class="section-title">Commercial Delivery &amp; Operational Governance</h2>
-                    <p class="section-desc">Audited track record across MENA freelancing marketplaces, contract protections, and domestic banking settlement.</p>
-                </header>
-
-                <div class="freelance-dossier-layout">
-                    <div class="freelance-stat-card">
-                        <h3>Regional Marketplace Track Record</h3>
-                        <p>Over two years of commercial client execution across Mostaqel, Khamsat, and Nafizly. Delivering custom single-page applications, administrative dashboards, and backend APIs with structured milestone sign-offs.</p>
-                        
-                        <div class="freelance-metrics-row">
-                            <div class="freelance-metric">
-                                <span class="freelance-metric-num">30+</span>
-                                <span class="freelance-metric-label">Completed Systems</span>
-                            </div>
-                            <div class="freelance-metric">
-                                <span class="freelance-metric-num">100%</span>
-                                <span class="freelance-metric-label">On-Time Delivery</span>
-                            </div>
-                            <div class="freelance-metric">
-                                <span class="freelance-metric-num">0</span>
-                                <span class="freelance-metric-label">Platform Disputes</span>
-                            </div>
-                        </div>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn-solid">
+                            <span>View Selected Work</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="https://ziad-portfolio-3d.pages.dev" target="_blank" class="btn-outline">
+                            <i class="fas fa-cube"></i>
+                            <span>3D WebGL Portfolio</span>
+                        </a>
+                        <a href="https://github.com/ZiadtahaM" target="_blank" class="btn-outline">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub (124 Repos)</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ziad-taha-271216285" target="_blank" class="btn-outline">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
+                </div>
 
-                    <div class="freelance-stat-card">
-                        <h3>Banking Settlement &amp; Contract Safety</h3>
-                        <p>Established financial and legal workflows for international and domestic contracts. Clear scope of work definitions prevent unpaid scope creep, while established banking channels ensure clean international fund repatriation.</p>
-                        
-                        <div class="freelance-metrics-row">
-                            <div class="freelance-metric">
-                                <span class="freelance-metric-num">USD / EGP</span>
-                                <span class="freelance-metric-label">Dual Currency Clearing</span>
-                            </div>
-                            <div class="freelance-metric">
-                                <span class="freelance-metric-num">Payoneer</span>
-                                <span class="freelance-metric-label">Global Escrow Settlement</span>
-                            </div>
-                            <div class="freelance-metric">
-                                <span class="freelance-metric-num">Direct Bank</span>
-                                <span class="freelance-metric-label">Egyptian Commercial Banking</span>
-                            </div>
-                        </div>
+                <!-- Verified Stats Bar -->
+                <div class="stats-ribbon">
+                    <div class="stat-cell">
+                        <span class="stat-value">30+</span>
+                        <span class="stat-label">Commercial Client Deliveries</span>
+                    </div>
+                    <div class="stat-cell">
+                        <span class="stat-value">Huma-volve</span>
+                        <span class="stat-label">Backend Software Engineer</span>
+                    </div>
+                    <div class="stat-cell">
+                        <span class="stat-value">DEPI Fellow</span>
+                        <span class="stat-label">MCIT National Program</span>
+                    </div>
+                    <div class="stat-cell">
+                        <span class="stat-value">EELU '26</span>
+                        <span class="stat-label">B.Sc. Computer Science &amp; IT</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Career Timeline Section -->
-        <section id="experience" class="section-wrapper">
-            <div class="container">
-                <header class="section-masthead">
-                    <span class="section-label">CAREER LEDGER</span>
-                    <h2 class="section-title">Professional Experience &amp; Education</h2>
-                    <p class="section-desc">Chronological history of software engineering responsibilities, fellowships, and academic qualifications.</p>
-                </header>
+        <!-- Selected Work Section -->
+        <section id="work" class="section-block">
+            <div class="content-container">
+                <div class="section-heading-group">
+                    <h2 class="section-heading">Selected Work</h2>
+                    <p class="section-subtext">Real production codebases, live deployments, and measurable outcomes.</p>
+                </div>
 
-                <div class="timeline-ledger">
+                <!-- Filter Controls -->
+                <div class="filter-controls" role="tablist">
+                    <button class="filter-button active" data-filter="all">All Systems (6)</button>
+                    <button class="filter-button" data-filter="fullstack">Full-Stack &amp; APIs</button>
+                    <button class="filter-button" data-filter="commerce">Commerce &amp; Portals</button>
+                    <button class="filter-button" data-filter="graphics">3D &amp; Graphics</button>
+                </div>
+
+                <div class="case-studies-stream">
+
+                    <!-- Case Study 1: edu-pro Portal -->
+                    <article class="case-card" data-category="fullstack">
+                        <div class="case-visual">
+                            <img src="assets/screenshots/edu-pro-portal.png" alt="edu-pro University Portal Interface" loading="lazy" />
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <div>
+                                    <h3 class="case-title">edu-pro Portal</h3>
+                                    <p class="case-subtitle">High-concurrency university exam and course delivery platform</p>
+                                </div>
+                                <span class="case-tag">Full-Stack</span>
+                            </div>
+
+                            <div class="case-tech-list">
+                                <span class="tech-chip">React</span>
+                                <span class="tech-chip">TypeScript</span>
+                                <span class="tech-chip">Cloudflare Workers</span>
+                                <span class="tech-chip">Drizzle ORM</span>
+                            </div>
+
+                            <div class="case-story">
+                                <div class="lang-switch-wrap">
+                                    <button class="lang-toggle-btn active" onclick="switchLang(this, 'en')">English</button>
+                                    <button class="lang-toggle-btn" onclick="switchLang(this, 'ar')">العربية</button>
+                                </div>
+
+                                <div class="story-content en active">
+                                    <p>
+                                        I built this platform to eliminate database connection lockups that traditional university systems face when thousands of students submit exam answers simultaneously.
+                                    </p>
+                                    <p>
+                                        By migrating critical submission endpoints to Cloudflare Workers with typed Drizzle queries and optimistic UI updates, the system sustained 1,200 concurrent student submissions with zero timeouts, while first contentful paint dropped below 600ms globally.
+                                    </p>
+                                </div>
+
+                                <div class="story-content ar">
+                                    <p>
+                                        قمت بتطوير هذه المنصة لحل مشكلة التجمد وبطء قواعد البيانات في أنظمة الامتحانات المركزية عند تدفق آلاف الطلاب في الدقيقة نفسها لتسليم الإجابات.
+                                    </p>
+                                    <p>
+                                        تم تشييد بنية طرفية موزعة على Cloudflare Workers مع استعلامات بيانات خفيفة ومحكمة عبر Drizzle، مما سمح باستيعاب 1200 تسليم امتحان متزامن دون أي فقد للبيانات وتسريع التحميل إلى أقل من 600 مللي ثانية.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="case-footer">
+                                <a href="https://edu-pro-portal.pages.dev" target="_blank" class="link-btn primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Portal</span>
+                                </a>
+                                <a href="https://github.com/ZiadtahaM" target="_blank" class="link-btn secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 2: Akasia Premium -->
+                    <article class="case-card" data-category="commerce">
+                        <div class="case-visual">
+                            <img src="assets/screenshots/akasia-premium.png" alt="Akasia Premium Gum Arabic Platform" loading="lazy" />
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <div>
+                                    <h3 class="case-title">Akasia Premium</h3>
+                                    <p class="case-subtitle">Enterprise B2B gum arabic export platform &amp; quotation engine</p>
+                                </div>
+                                <span class="case-tag">Frontend &bull; Enterprise</span>
+                            </div>
+
+                            <div class="case-tech-list">
+                                <span class="tech-chip">Angular 18</span>
+                                <span class="tech-chip">TypeScript</span>
+                                <span class="tech-chip">Tailwind CSS</span>
+                                <span class="tech-chip">Cloudflare Pages</span>
+                            </div>
+
+                            <div class="case-story">
+                                <div class="lang-switch-wrap">
+                                    <button class="lang-toggle-btn active" onclick="switchLang(this, 'en')">English</button>
+                                    <button class="lang-toggle-btn" onclick="switchLang(this, 'ar')">العربية</button>
+                                </div>
+
+                                <div class="story-content en active">
+                                    <p>
+                                        International agricultural buyers required instantaneous access to grade specifications, certified laboratory analyses, and quotation calculators without heavy download footprints.
+                                    </p>
+                                    <p>
+                                        I designed an Angular application with pre-rendered product specs, interactive grade comparators, and localized Arabic/English interfaces. It achieved a 99% Google Lighthouse performance score with zero layout shift on both mobile and desktop.
+                                    </p>
+                                </div>
+
+                                <div class="story-content ar">
+                                    <p>
+                                        احتاج المستوردون الدوليون للمنتجات الزراعية إلى معاينة مواصفات الدرجات وشهادات التحليل المخبري وحساب عروض الأسعار بصورة فورية وبأعلى سرعة ممكنة.
+                                    </p>
+                                    <p>
+                                        تم تطوير منصة تفاعلية بتقنية Angular توفر مقارنة فورية بين الدرجات مع دعم ثنائي اللغة للعربية والإنجليزية، محققة تقييم 99% في Google Lighthouse وسرعة استجابة فائقة.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="case-footer">
+                                <a href="https://akasia-premium.pages.dev" target="_blank" class="link-btn primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Application</span>
+                                </a>
+                                <a href="https://akasiagum.com" target="_blank" class="link-btn secondary">
+                                    <i class="fas fa-globe"></i>
+                                    <span>akasiagum.com</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 3: Al-Baraa Platform -->
+                    <article class="case-card" data-category="fullstack">
+                        <div class="case-visual">
+                            <img src="assets/screenshots/al-baraa-platform.png" alt="Al-Baraa Academy Platform Interface" loading="lazy" />
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <div>
+                                    <h3 class="case-title">Al-Baraa Platform</h3>
+                                    <p class="case-subtitle">Bilingual academy management &amp; course streaming system</p>
+                                </div>
+                                <span class="case-tag">Full-Stack</span>
+                            </div>
+
+                            <div class="case-tech-list">
+                                <span class="tech-chip">React</span>
+                                <span class="tech-chip">Next.js</span>
+                                <span class="tech-chip">TypeScript</span>
+                                <span class="tech-chip">PostgreSQL</span>
+                            </div>
+
+                            <div class="case-story">
+                                <div class="lang-switch-wrap">
+                                    <button class="lang-toggle-btn active" onclick="switchLang(this, 'en')">English</button>
+                                    <button class="lang-toggle-btn" onclick="switchLang(this, 'ar')">العربية</button>
+                                </div>
+
+                                <div class="story-content en active">
+                                    <p>
+                                        Regional educational academies in Egypt needed an integrated system for lecture video streaming, student assessments, and automated payment receipts with native Arabic layout support.
+                                    </p>
+                                    <p>
+                                        I engineered a modular Next.js application with role-segregated student and instructor portals, native Arabic RTL stylesheet isolation, and secure PostgreSQL student records, serving over 2,000 active students with zero layout shifts.
+                                    </p>
+                                </div>
+
+                                <div class="story-content ar">
+                                    <p>
+                                        احتاجت الأكاديميات التعليمية في مصر إلى منصة شاملة للبث التعليمي ومتابعة تقدم الطلاب وإصدار إيصالات السداد مع دعم أصيل للغة العربية.
+                                    </p>
+                                    <p>
+                                        قمت بتطوير تطبيق متكامل بتقنية Next.js مع لوحات تحكم مستقلة للطلاب والمعلمين ودعم فوري لاتجاه الواجهة RTL/LTR، حيث يخدم أكثر من 2000 طالب نشط مع استقرار كامل في العرض.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="case-footer">
+                                <a href="https://al-baraa-platform.pages.dev" target="_blank" class="link-btn primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Portal</span>
+                                </a>
+                                <a href="https://github.com/ZiadtahaM" target="_blank" class="link-btn secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 4: FlowDesk Egypt -->
+                    <article class="case-card" data-category="fullstack">
+                        <div class="case-visual">
+                            <img src="assets/screenshots/flowdesk-egypt.png" alt="Flowdesk Egypt Workspace CRM Interface" loading="lazy" />
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <div>
+                                    <h3 class="case-title">FlowDesk Egypt</h3>
+                                    <p class="case-subtitle">Coworking space scheduling engine &amp; client billing system</p>
+                                </div>
+                                <span class="case-tag">Full-Stack</span>
+                            </div>
+
+                            <div class="case-tech-list">
+                                <span class="tech-chip">React</span>
+                                <span class="tech-chip">Node.js</span>
+                                <span class="tech-chip">Express</span>
+                                <span class="tech-chip">MySQL</span>
+                            </div>
+
+                            <div class="case-story">
+                                <div class="lang-switch-wrap">
+                                    <button class="lang-toggle-btn active" onclick="switchLang(this, 'en')">English</button>
+                                    <button class="lang-toggle-btn" onclick="switchLang(this, 'ar')">العربية</button>
+                                </div>
+
+                                <div class="story-content en active">
+                                    <p>
+                                        Coworking spaces in Alexandria and Cairo frequently suffered from meeting room scheduling collisions and manual spreadsheet billing errors during peak business hours.
+                                    </p>
+                                    <p>
+                                        I implemented an atomic time-slot locking engine in Node.js, combined with instant digital invoicing and a responsive bilingual booking client. This eliminated room booking conflicts entirely and reduced check-in processing from 15 minutes to 30 seconds.
+                                    </p>
+                                </div>
+
+                                <div class="story-content ar">
+                                    <p>
+                                        عانت مساحات العمل المشتركة في الإسكندرية والقاهرة من تضارب حجز غرف الاجتماعات والأخطاء اليدوية في الحسابات والفواتير أثناء أوقات الذروة.
+                                    </p>
+                                    <p>
+                                        قمت ببناء محرك حجز آني يعتمد على أقفال المعاملات لمنع أي تضارب، مع إصدار تلقائي للفواتير ودعم ثنائي اللغة، مما قلص زمن إنهاء الحجز من 15 دقيقة إلى أقل من 30 ثانية.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="case-footer">
+                                <a href="https://flowdesk-egypt.pages.dev" target="_blank" class="link-btn primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live System</span>
+                                </a>
+                                <a href="https://github.com/ZiadtahaM" target="_blank" class="link-btn secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 5: Solar System 3D -->
+                    <article class="case-card" data-category="graphics">
+                        <div class="case-visual">
+                            <img src="assets/screenshots/solar-system-3d-zt.png" alt="Solar System 3D WebGL Simulation" loading="lazy" />
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <div>
+                                    <h3 class="case-title">Solar-System-3D</h3>
+                                    <p class="case-subtitle">Interactive real-time celestial mechanics simulation in WebGL</p>
+                                </div>
+                                <span class="case-tag">3D &bull; WebGL</span>
+                            </div>
+
+                            <div class="case-tech-list">
+                                <span class="tech-chip">Three.js</span>
+                                <span class="tech-chip">WebGL</span>
+                                <span class="tech-chip">GLSL Shaders</span>
+                                <span class="tech-chip">JavaScript</span>
+                            </div>
+
+                            <div class="case-story">
+                                <div class="lang-switch-wrap">
+                                    <button class="lang-toggle-btn active" onclick="switchLang(this, 'en')">English</button>
+                                    <button class="lang-toggle-btn" onclick="switchLang(this, 'ar')">العربية</button>
+                                </div>
+
+                                <div class="story-content en active">
+                                    <p>
+                                        Complex 3D browser graphics often induce memory leaks and frame rate degradation below 30 FPS on standard mobile and laptop GPUs.
+                                    </p>
+                                    <p>
+                                        I built a custom render loop using Three.js with handwritten GLSL fragment shaders, instanced geometry buffers, and texture level-of-detail loading, sustaining a locked 60 FPS across both mobile devices and desktop screens while lowering GPU memory consumption by 40%.
+                                    </p>
+                                </div>
+
+                                <div class="story-content ar">
+                                    <p>
+                                        تتسبب التطبيقات الرسومية ثلاثية الأبعاد في المتصفح في هبوط معدل الإطارات إلى ما دون 30 إطارا في الثانية واستهلاك زائد لذاكرة كروت الشاشة على الأجهزة المتوسطة.
+                                    </p>
+                                    <p>
+                                        قمت بتطوير حلقة تصيير ثلاثية الأبعاد عبر Three.js ومظللات GLSL مع إدارة دقيقة لموارد الذاكرة والرسوميات، مما حقق استقرارا تاما عند 60 إطارا في الثانية وخفضا بنسبة 40% في استهلاك الذاكرة.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="case-footer">
+                                <a href="https://solar-system-3d-zt.pages.dev" target="_blank" class="link-btn primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Launch Simulation</span>
+                                </a>
+                                <a href="https://ziad-portfolio-3d.pages.dev" target="_blank" class="link-btn secondary">
+                                    <i class="fas fa-cube"></i>
+                                    <span>3D Portfolio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 6: OmniRoute -->
+                    <article class="case-card" data-category="fullstack">
+                        <div class="case-visual">
+                            <img src="assets/screenshots/ai-ops-cockpit.png" alt="OmniRoute AI Gateway Dashboard" loading="lazy" />
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <div>
+                                    <h3 class="case-title">OmniRoute</h3>
+                                    <p class="case-subtitle">High-availability multi-provider AI reverse proxy &amp; semantic cache</p>
+                                </div>
+                                <span class="case-tag">System Architecture</span>
+                            </div>
+
+                            <div class="case-tech-list">
+                                <span class="tech-chip">TypeScript</span>
+                                <span class="tech-chip">Node.js</span>
+                                <span class="tech-chip">Redis</span>
+                                <span class="tech-chip">Docker</span>
+                            </div>
+
+                            <div class="case-story">
+                                <div class="lang-switch-wrap">
+                                    <button class="lang-toggle-btn active" onclick="switchLang(this, 'en')">English</button>
+                                    <button class="lang-toggle-btn" onclick="switchLang(this, 'ar')">العربية</button>
+                                </div>
+
+                                <div class="story-content en active">
+                                    <p>
+                                        Production platforms integrating language models regularly experience upstream vendor rate limits, outages, and latency spikes when dependent on a single endpoint.
+                                    </p>
+                                    <p>
+                                        I architected a reverse proxy with automated circuit breakers, intelligent fallback routing across providers, and Redis semantic token caching across 42,000 lines of strict TypeScript, maintaining 99.98% operational uptime and reducing token costs by 28%.
+                                    </p>
+                                </div>
+
+                                <div class="story-content ar">
+                                    <p>
+                                        تعاني المنصات التي تعتمد على الذكاء الاصطناعي من توقف مفاجئ للخدمة عند حدوث أعطال لدى مزود الخدمة المنفرد أو استنفاد حدود الاستهلاك.
+                                    </p>
+                                    <p>
+                                        قمت بتصميم بوابة وسيطة موزعة توفر تحويلا فوريا للمسارات عند تعثر الاتصال مع تخزين مؤقت للرموز عبر 42 ألف سطر برمجي بلغة TypeScript، محققة استقرارا بنسبة 99.98% وخفضا للتكاليف بنسبة 28%.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="case-footer">
+                                <a href="https://github.com/ZiadtahaM/OmniRoute" target="_blank" class="link-btn primary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code (42K LoC)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="section-block bg-subtle">
+            <div class="content-container">
+                <div class="section-heading-group">
+                    <h2 class="section-heading">Experience &amp; Education</h2>
+                    <p class="section-subtext">Where I have built, learned, and contributed.</p>
+                </div>
+
+                <div class="timeline-list">
                     <div class="timeline-row">
-                        <div class="timeline-period-col">
-                            <span class="timeline-period">Jan 2026 to Present</span>
-                            <span class="timeline-location">Remote / Egypt</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-period">Jan 2026 – Present</span>
+                            <span class="timeline-place">Remote / Egypt</span>
                         </div>
-                        <div class="timeline-content-col">
-                            <h3 class="timeline-role">Backend Software Engineer</h3>
-                            <span class="timeline-company">Huma-volve</span>
-                            <p class="timeline-desc">
-                                Engineering and maintaining high-performance REST APIs in NestJS and Java supporting 15,000 monthly active users. Tuning PostgreSQL query plans and connection pooling to lower endpoint latencies by 35%. Integrating role-based authorization layers and automated contract tests.
+                        <div class="timeline-detail">
+                            <h3 class="timeline-title">Backend Software Engineer</h3>
+                            <h4 class="timeline-company">Huma-volve</h4>
+                            <p class="timeline-paragraph">
+                                Engineering high-performance REST APIs in NestJS and Java supporting 15,000 monthly active users. Tuning PostgreSQL query plans and connection pooling to lower endpoint latencies by 35%. Integrating role-based access control (RBAC) and automated contract tests.
                             </p>
                             <div class="timeline-tags">
-                                <span class="timeline-tag">NestJS</span>
-                                <span class="timeline-tag">Java Spring</span>
-                                <span class="timeline-tag">PostgreSQL</span>
-                                <span class="timeline-tag">Docker</span>
-                                <span class="timeline-tag">RBAC</span>
+                                <span class="tag-label">NestJS</span>
+                                <span class="tag-label">Java Spring</span>
+                                <span class="tag-label">PostgreSQL</span>
+                                <span class="tag-label">Docker</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="timeline-row">
-                        <div class="timeline-period-col">
-                            <span class="timeline-period">Jun 2025 to Feb 2026</span>
-                            <span class="timeline-location">Alexandria, Egypt</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-period">Jun 2025 – Feb 2026</span>
+                            <span class="timeline-place">Alexandria, Egypt</span>
                         </div>
-                        <div class="timeline-content-col">
-                            <h3 class="timeline-role">Angular Developer Fellow</h3>
-                            <span class="timeline-company">Digital Egypt Pioneers Initiative (DEPI)</span>
-                            <p class="timeline-desc">
-                                Selected for intensive national engineering training funded by MCIT. Engineered single-page application modules with Angular 18, RxJS pipelines, and strict TypeScript types. Achieved 98% Lighthouse performance scores and implemented accessible WCAG 2.1 AA interfaces.
+                        <div class="timeline-detail">
+                            <h3 class="timeline-title">Angular Developer Fellow</h3>
+                            <h4 class="timeline-company">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            <p class="timeline-paragraph">
+                                Selected for intensive national engineering training funded by MCIT Egypt. Built single-page application modules with Angular 18, RxJS state pipelines, and strict TypeScript types. Achieved 98% Lighthouse performance scores and implemented accessible WCAG 2.1 AA interfaces.
                             </p>
                             <div class="timeline-tags">
-                                <span class="timeline-tag">Angular 18</span>
-                                <span class="timeline-tag">RxJS</span>
-                                <span class="timeline-tag">TypeScript</span>
-                                <span class="timeline-tag">WCAG 2.1 AA</span>
+                                <span class="tag-label">Angular 18</span>
+                                <span class="tag-label">RxJS</span>
+                                <span class="tag-label">TypeScript</span>
+                                <span class="tag-label">WCAG 2.1 AA</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="timeline-row">
-                        <div class="timeline-period-col">
-                            <span class="timeline-period">Jan 2024 to Present</span>
-                            <span class="timeline-location">Remote / MENA</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-period">Jan 2024 – Present</span>
+                            <span class="timeline-place">Remote / MENA</span>
                         </div>
-                        <div class="timeline-content-col">
-                            <h3 class="timeline-role">Independent Software Consultant</h3>
-                            <span class="timeline-company">Commercial Client Engagements (Mostaqel, Khamsat, Nafizly)</span>
-                            <p class="timeline-desc">
-                                Executed 30+ client software deliverables across e-commerce storefronts, business automation tools, and internal portals. Re-architected digital operations for regional clients, resulting in significant page speed improvements and reliable customer checkouts.
+                        <div class="timeline-detail">
+                            <h3 class="timeline-title">Independent Full-Stack Consultant</h3>
+                            <h4 class="timeline-company">Commercial Client Engagements (Mostaqel, Khamsat, Nafizly)</h4>
+                            <p class="timeline-paragraph">
+                                Executed 30+ client software deliverables across e-commerce storefronts, business automation tools, and internal portals. Re-architected digital operations for regional clients, resulting in measurable page speed improvements and dispute-free milestone sign-offs.
                             </p>
                             <div class="timeline-tags">
-                                <span class="timeline-tag">Client Scoping</span>
-                                <span class="timeline-tag">Angular</span>
-                                <span class="timeline-tag">React</span>
-                                <span class="timeline-tag">Node.js</span>
-                                <span class="timeline-tag">Tailwind</span>
+                                <span class="tag-label">Angular</span>
+                                <span class="tag-label">React</span>
+                                <span class="tag-label">Node.js</span>
+                                <span class="tag-label">Milestone Scoping</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="timeline-row">
-                        <div class="timeline-period-col">
-                            <span class="timeline-period">2022 to 2026</span>
-                            <span class="timeline-location">Alexandria, Egypt</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-period">2022 – 2026</span>
+                            <span class="timeline-place">Alexandria, Egypt</span>
                         </div>
-                        <div class="timeline-content-col">
-                            <h3 class="timeline-role">B.Sc. Computer Science &amp; IT</h3>
-                            <span class="timeline-company">Egyptian E-Learning University (EELU) Alexandria</span>
-                            <p class="timeline-desc">
-                                Senior year undergraduate focusing on algorithms, operating system internals, database theory, distributed systems, and network protocols. Certified in Microsoft Azure Fundamentals and Cisco CCNA.
+                        <div class="timeline-detail">
+                            <h3 class="timeline-title">B.Sc. Computer Science &amp; IT</h3>
+                            <h4 class="timeline-company">Egyptian E-Learning University (EELU) Alexandria</h4>
+                            <p class="timeline-paragraph">
+                                Senior year undergraduate focusing on algorithms, operating system internals, database theory, distributed systems, and networking protocols. Certified in Microsoft Azure Fundamentals and Cisco CCNA.
                             </p>
                             <div class="timeline-tags">
-                                <span class="timeline-tag">Algorithms</span>
-                                <span class="timeline-tag">Database Systems</span>
-                                <span class="timeline-tag">Azure Fundamentals</span>
-                                <span class="timeline-tag">Cisco CCNA</span>
+                                <span class="tag-label">Algorithms</span>
+                                <span class="tag-label">Distributed Systems</span>
+                                <span class="tag-label">Azure Fundamentals</span>
+                                <span class="tag-label">CCNA</span>
                             </div>
                         </div>
                     </div>
@@ -863,111 +565,230 @@
             </div>
         </section>
 
-        <!-- Direct Inquiries Section -->
-        <section id="contact" class="section-wrapper">
-            <div class="container">
-                <header class="section-masthead">
-                    <span class="section-label">DIRECT INQUIRIES</span>
-                    <h2 class="section-title">Initiate a Technical Engagement</h2>
-                    <p class="section-desc">Direct lines of communication for commercial software development, architectural reviews, or training contracts.</p>
-                </header>
+        <!-- Technical Stack Section -->
+        <section id="skills" class="section-block">
+            <div class="content-container">
+                <div class="section-heading-group">
+                    <h2 class="section-heading">Technical Stack</h2>
+                    <p class="section-subtext">The tools and frameworks I use to build production systems.</p>
+                </div>
 
-                <div class="contact-grid">
-                    <div class="contact-info-panel">
-                        <h3>Contact Coordinates</h3>
-                        <p>Verified channels for direct technical discussion with Ziad Taha.</p>
-
-                        <div class="contact-links-list">
-                            <div class="contact-link-item">
-                                <i class="fas fa-envelope contact-link-icon"></i>
-                                <div class="contact-link-meta">
-                                    <span class="contact-link-label">Direct Email</span>
-                                    <span class="contact-link-val" id="emailVal">ziad.taha3456@gmail.com</span>
-                                </div>
-                                <button type="button" class="copy-btn" onclick="copyEmail()">Copy</button>
-                            </div>
-
-                            <a href="https://wa.me/201028785511" target="_blank" class="contact-link-item">
-                                <i class="fab fa-whatsapp contact-link-icon green"></i>
-                                <div class="contact-link-meta">
-                                    <span class="contact-link-label">Direct Phone / WhatsApp</span>
-                                    <span class="contact-link-val">+20 102 878 5511</span>
-                                </div>
-                            </a>
-
-                            <div class="contact-link-item">
-                                <i class="fas fa-location-dot contact-link-icon"></i>
-                                <div class="contact-link-meta">
-                                    <span class="contact-link-label">Location &amp; Time Zone</span>
-                                    <span class="contact-link-val">Alexandria, Egypt (UTC+2)</span>
-                                </div>
-                            </div>
-
-                            <a href="https://github.com/ZiadtahaM" target="_blank" class="contact-link-item">
-                                <i class="fab fa-github contact-link-icon"></i>
-                                <div class="contact-link-meta">
-                                    <span class="contact-link-label">GitHub Profile</span>
-                                    <span class="contact-link-val">github.com/ZiadtahaM</span>
-                                </div>
-                            </a>
-
-                            <a href="https://linkedin.com/in/ziad-taha-271216285" target="_blank" class="contact-link-item">
-                                <i class="fab fa-linkedin contact-link-icon"></i>
-                                <div class="contact-link-meta">
-                                    <span class="contact-link-label">LinkedIn Profile</span>
-                                    <span class="contact-link-val">linkedin.com/in/ziad-taha-271216285</span>
-                                </div>
-                            </a>
+                <div class="stack-grid">
+                    <div class="stack-card">
+                        <h3 class="stack-cat-title">Languages &amp; Core</h3>
+                        <p class="stack-cat-desc">Strictly-typed backends and reactive client architectures.</p>
+                        <div class="stack-pills">
+                            <span>TypeScript</span>
+                            <span>JavaScript (ES2024)</span>
+                            <span>Java</span>
+                            <span>SQL</span>
+                            <span>HTML5 / Semantic CSS</span>
                         </div>
-                        <p id="copyFeedback" style="margin-top: 10px; color: var(--accent-emerald); font-family: var(--font-mono); font-size: 12px;"></p>
                     </div>
 
-                    <div class="contact-form-panel">
-                        <h3>Direct Proposal Form</h3>
-                        <p>Send project specifications, target schedules, or contract scopes directly.</p>
+                    <div class="stack-card">
+                        <h3 class="stack-cat-title">Client Frameworks</h3>
+                        <p class="stack-cat-desc">Modern single-page applications and server-rendered portals.</p>
+                        <div class="stack-pills">
+                            <span>Angular 18</span>
+                            <span>RxJS</span>
+                            <span>React 19</span>
+                            <span>Next.js (App Router)</span>
+                            <span>Tailwind CSS</span>
+                            <span>Arabic RTL Layouts</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-card">
+                        <h3 class="stack-cat-title">Backend &amp; Server</h3>
+                        <p class="stack-cat-desc">Decoupled services, API gateways, and authorization.</p>
+                        <div class="stack-pills">
+                            <span>NestJS</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Java Spring Boot</span>
+                            <span>RESTful APIs</span>
+                            <span>WebSockets</span>
+                            <span>JWT &amp; RBAC</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-card">
+                        <h3 class="stack-cat-title">Data &amp; Cloud</h3>
+                        <p class="stack-cat-desc">Relational datastores, caching, and edge deployment.</p>
+                        <div class="stack-pills">
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>MySQL</span>
+                            <span>Drizzle ORM</span>
+                            <span>Docker</span>
+                            <span>Cloudflare Pages</span>
+                            <span>Cloudflare Workers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commercial Track Record Section -->
+        <section id="delivery" class="section-block bg-subtle">
+            <div class="content-container">
+                <div class="section-heading-group">
+                    <h2 class="section-heading">Commercial Track Record</h2>
+                    <p class="section-subtext">Audited delivery governance, contract clarity, and international settlement.</p>
+                </div>
+
+                <div class="track-record-grid">
+                    <div class="track-card">
+                        <h3 class="track-card-title">Regional Marketplace Delivery</h3>
+                        <p class="track-card-text">Over two years of commercial client execution across Mostaqel, Khamsat, and Nafizly. Delivering custom single-page applications, administrative dashboards, and backend APIs with structured milestone sign-offs.</p>
+                        <div class="track-numbers">
+                            <div>
+                                <span class="num-big">30+</span>
+                                <span class="num-text">Completed Deliverables</span>
+                            </div>
+                            <div>
+                                <span class="num-big">100%</span>
+                                <span class="num-text">On-Time Delivery</span>
+                            </div>
+                            <div>
+                                <span class="num-big">0</span>
+                                <span class="num-text">Platform Disputes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track-card">
+                        <h3 class="track-card-title">Financial Settlement &amp; Safety</h3>
+                        <p class="track-card-text">Established financial and contractual workflows for international and regional clients. Clear scope of work definitions prevent unpaid scope creep, while verified banking channels ensure seamless fund settlement.</p>
+                        <div class="track-numbers">
+                            <div>
+                                <span class="num-big">USD / EGP</span>
+                                <span class="num-text">Dual Currency</span>
+                            </div>
+                            <div>
+                                <span class="num-big">Payoneer</span>
+                                <span class="num-text">Escrow Settlement</span>
+                            </div>
+                            <div>
+                                <span class="num-big">Bank Wire</span>
+                                <span class="num-text">Direct Commercial Transfer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct Contact Section -->
+        <section id="contact" class="section-block">
+            <div class="content-container">
+                <div class="section-heading-group">
+                    <h2 class="section-heading">Get in Touch</h2>
+                    <p class="section-subtext">Available for select engineering contracts, consultations, and full-time positions.</p>
+                </div>
+
+                <div class="contact-split">
+                    <!-- Left: Direct Channels -->
+                    <div class="contact-direct">
+                        <h3 class="contact-subhead">Direct Communication</h3>
+                        <p class="contact-subdesc">Fastest response times via WhatsApp or direct email.</p>
+
+                        <div class="contact-methods">
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-body">
+                                    <span class="method-name">Email</span>
+                                    <a href="mailto:ziad.taha3456@gmail.com" class="method-link" id="emailVal">ziad.taha3456@gmail.com</a>
+                                </div>
+                                <button type="button" class="method-copy-btn" onclick="copyEmail()">Copy</button>
+                            </div>
+
+                            <a href="https://wa.me/201028785511" target="_blank" class="method-card clickable">
+                                <div class="method-icon green">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="method-body">
+                                    <span class="method-name">Phone / WhatsApp</span>
+                                    <span class="method-value">+20 102 878 5511</span>
+                                </div>
+                                <i class="fas fa-arrow-right method-arrow"></i>
+                            </a>
+
+                            <a href="https://linkedin.com/in/ziad-taha-271216285" target="_blank" class="method-card clickable">
+                                <div class="method-icon blue">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="method-body">
+                                    <span class="method-name">LinkedIn</span>
+                                    <span class="method-value">linkedin.com/in/ziad-taha-271216285</span>
+                                </div>
+                                <i class="fas fa-arrow-right method-arrow"></i>
+                            </a>
+
+                            <a href="https://github.com/ZiadtahaM" target="_blank" class="method-card clickable">
+                                <div class="method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-body">
+                                    <span class="method-name">GitHub</span>
+                                    <span class="method-value">github.com/ZiadtahaM</span>
+                                </div>
+                                <i class="fas fa-arrow-right method-arrow"></i>
+                            </a>
+                        </div>
+                        <p id="copyFeedback" class="copy-notice"></p>
+                    </div>
+
+                    <!-- Right: Direct Message Form -->
+                    <div class="contact-form-side">
+                        <h3 class="contact-subhead">Send a Message</h3>
+                        <p class="contact-subdesc">Describe your project requirements, target schedule, or questions.</p>
 
                         <form id="contactForm" onsubmit="handleFormSubmit(event)">
-                            <div class="form-row">
-                                <div class="form-group">
+                            <div class="form-columns">
+                                <div class="input-field">
                                     <label for="name">Your Name</label>
                                     <input type="text" id="name" required placeholder="Full Name">
                                 </div>
-                                <div class="form-group">
+                                <div class="input-field">
                                     <label for="email">Email Address</label>
                                     <input type="email" id="email" required placeholder="name@company.com">
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="scope">Project Scope</label>
+                            <div class="form-columns">
+                                <div class="input-field">
+                                    <label for="scope">Project Type</label>
                                     <select id="scope">
-                                        <option value="saas">Full-Stack SaaS / Web Application</option>
-                                        <option value="angular">Enterprise Angular Implementation</option>
-                                        <option value="backend">NestJS / Node.js API Infrastructure</option>
-                                        <option value="mentorship">Freelance Coaching / Training</option>
+                                        <option value="saas">Full-Stack Web App / SaaS</option>
+                                        <option value="angular">Angular Client Architecture</option>
+                                        <option value="backend">NestJS / Node.js Backend API</option>
+                                        <option value="consulting">Technical Consulting</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div class="input-field">
                                     <label for="budget">Target Budget</label>
                                     <select id="budget">
-                                        <option value="standard">$1,000 to $3,000</option>
-                                        <option value="mid">$3,000 to $6,000</option>
-                                        <option value="enterprise">$6,000+</option>
+                                        <option value="tier1">$1,000 to $3,000</option>
+                                        <option value="tier2">$3,000 to $6,000</option>
+                                        <option value="tier3">$6,000+</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="message">Requirements &amp; Deliverables</label>
-                                <textarea id="message" rows="4" required placeholder="Detail scope, architecture needs, and delivery timeline..."></textarea>
+                            <div class="input-field">
+                                <label for="message">Message &amp; Timeline</label>
+                                <textarea id="message" rows="4" required placeholder="Tell me about what you are building..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn-submit" id="submitBtn">
+                            <button type="submit" class="submit-action-btn" id="submitBtn">
                                 <i class="fas fa-paper-plane"></i>
-                                <span>Send Direct Inquiry</span>
+                                <span>Send Direct Message</span>
                             </button>
-                            <p id="formFeedback" class="form-feedback"></p>
+                            <p id="formFeedback" class="form-status-msg"></p>
                         </form>
                     </div>
                 </div>
@@ -975,13 +796,13 @@
         </section>
     </main>
 
-    <!-- Technical Footer -->
+    <!-- Clean Footer -->
     <footer class="site-footer">
-        <div class="container">
+        <div class="content-container">
             <div class="footer-layout">
                 <div>
-                    <p class="footer-copy">Ziad Taha &bull; Full-Stack Software Engineer &bull; Alexandria, Egypt</p>
-                    <p class="footer-sub">Built with semantic HTML5, CSS Grid, and verified on-disk captures.</p>
+                    <p class="footer-lead">Ziad Taha &bull; Full-Stack Software Engineer</p>
+                    <p class="footer-sub">Alexandria, Egypt &bull; Open for remote engineering contracts &amp; full-time positions worldwide.</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Back to Top</a>

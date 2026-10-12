@@ -1,5 +1,5 @@
 // ==========================================================================
-// Ziad Taha — Portfolio Interactivity
+// Ziad Taha: Portfolio Interactivity
 // Clean, lightweight JavaScript without external dependencies
 // ==========================================================================
 

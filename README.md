@@ -1,4 +1,4 @@
-# Ziad Taha — Developer Portfolio
+# Ziad Taha: Developer Portfolio
 
 
 ## Visual Preview
@@ -8,7 +8,7 @@
 </div>
 
 
-This repository contains the static portfolio site for **Ziad Taha**, a full-stack developer based in Alexandria, Egypt. The site is a direct entry point to a broader GitHub portfolio spanning educational systems, e-commerce, operational dashboards, Node.js/NestJS APIs, React/TypeScript applications, and Three.js experiments.
+This repository contains the static portfolio site for **Ziad Taha**, a full-stack engineer and system architect based in Egypt and working remotely worldwide. The site is a direct entry point to a broader GitHub portfolio spanning AI gateways, educational systems, e-commerce, operational desktop workstations, Node.js/NestJS APIs, React/Angular applications, and Three.js WebGL systems.
 
 ## Repository contents
 

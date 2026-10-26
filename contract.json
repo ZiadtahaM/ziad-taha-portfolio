@@ -1,0 +1,31 @@
+{
+  "app": "ziadtaha",
+  "cloudflareProject": "ziadtaha",
+  "deployDir": ".",
+  "liveUrl": "https://ziadtaha.pages.dev",
+  "bannedStrings": [
+    "href=\"#\""
+  ],
+  "features": [
+    {
+      "id": "ddd-console",
+      "description": "Interactive DDD Architecture & Live Invariant Console",
+      "autoClick": false
+    },
+    {
+      "id": "dual-lens-toggle",
+      "description": "Dual-Lens Commercial vs Staff Engineering view toggle",
+      "autoClick": false
+    },
+    {
+      "id": "btn-engineering-lens",
+      "description": "Switch to Staff Engineering View",
+      "autoClick": true
+    },
+    {
+      "id": "btn-edge-chaos",
+      "description": "Run Edge Chaos button",
+      "autoClick": true
+    }
+  ]
+}

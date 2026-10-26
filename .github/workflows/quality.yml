@@ -1,0 +1,31 @@
+name: Portfolio Authority Hub Quality Gate
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify-authority-registry:
+    name: 81-Site Authority Registry & ROI Contracts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Authority Invariants Test Suite
+        run: node --test test/portfolio.invariants.test.mjs
+
+      - name: Verify Ubiquitous Language Contract
+        run: |
+          test -f UBIQUITOUS_LANGUAGE.md
+          grep -q "PortfolioSite" UBIQUITOUS_LANGUAGE.md
+          grep -q "DomainCluster" UBIQUITOUS_LANGUAGE.md
+          grep -q "ProductionLever" UBIQUITOUS_LANGUAGE.md
+          grep -q "AuthorityDossier" UBIQUITOUS_LANGUAGE.md

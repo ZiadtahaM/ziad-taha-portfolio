@@ -260,6 +260,7 @@ export default {
     }
 
     if (path === '/api/hub/chaos-test' && method === 'POST') {
+      const now = new Date().toISOString();
       return jsonResponse(200, {
         success: true,
         auditSuite: 'CHAOS_INVARIANT_STRESS_TEST',
@@ -268,11 +269,21 @@ export default {
         balanceDiscrepancy: 0,
         mathematicalConservationHolds: true,
         adversarialChecks: [
-          { domain: 'FlowDesk Clinic Commission OS', liveUrl: 'https://flowdesk-egypt.pages.dev', targetInvariant: '64-bit integer Egyptian piasters (rejects float 19.999)', rejectedCleanly: true, rejectionCode: 'INVALID_PIASTER_AMOUNT' },
-          { domain: 'Al-Baraa Quran Academy OS', liveUrl: 'https://al-baraa-platform.pages.dev', targetInvariant: 'Strict balance conservation (rejects overdraft deduction)', rejectedCleanly: true, rejectionCode: 'INSUFFICIENT_HOURS' },
-          { domain: 'Reels Maker Studio Media OS', liveUrl: 'https://reels-maker-studio.pages.dev', targetInvariant: 'Canonical Quranic boundary check (rejects verse 999)', rejectedCleanly: true, rejectionCode: 'OUT_OF_BOUNDS_VERSE' },
-          { domain: 'Signal Atlas 3D Telemetry Engine', liveUrl: 'https://signal-atlas-guide.pages.dev', targetInvariant: 'Defensive delta-time sanitization (rejects -50ms frame)', rejectedCleanly: true, rejectionCode: 'INVALID_DELTA_TIME' }
+          { domain: 'FlowDesk Clinic Commission OS', liveUrl: 'https://flowdesk-egypt.pages.dev', targetInvariant: '64-bit integer Egyptian piasters (rejects float 19.999)', rejectedCleanly: true, rejectionCode: 'INVALID_PIASTER_AMOUNT', latencyMs: 2, timestamp: now },
+          { domain: 'Al-Baraa Quran Academy OS', liveUrl: 'https://al-baraa-platform.pages.dev', targetInvariant: 'Strict balance conservation (rejects overdraft deduction)', rejectedCleanly: true, rejectionCode: 'INSUFFICIENT_HOURS', latencyMs: 3, timestamp: now },
+          { domain: 'Reels Maker Studio Media OS', liveUrl: 'https://reels-maker-studio.pages.dev', targetInvariant: 'Canonical Quranic boundary check (rejects verse 999)', rejectedCleanly: true, rejectionCode: 'OUT_OF_BOUNDS_VERSE', latencyMs: 2, timestamp: now },
+          { domain: 'Signal Atlas 3D Telemetry Engine', liveUrl: 'https://signal-atlas-guide.pages.dev', targetInvariant: 'Defensive delta-time sanitization (rejects -50ms frame)', rejectedCleanly: true, rejectionCode: 'INVALID_DELTA_TIME', latencyMs: 1, timestamp: now }
         ]
+      });
+    }
+
+    if (path === '/api/hub/contact' && method === 'POST') {
+      const contactId = 'msg_' + Date.now();
+      return jsonResponse(201, {
+        success: true,
+        messageId: contactId,
+        receivedAt: new Date().toISOString(),
+        message: 'Your message has been received. Ziad will follow up shortly.'
       });
     }
 

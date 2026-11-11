@@ -91,30 +91,58 @@ function copyEmail() {
 }
 
 // Contact Form Handler
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
     const feedback = document.getElementById('formFeedback');
+    const form = document.getElementById('contactForm');
     
     if (btn) {
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
         btn.disabled = true;
     }
 
-    setTimeout(() => {
+    const formData = new FormData(form);
+    const payload = {
+        name: formData.get('name') || document.getElementById('name')?.value || 'Visitor',
+        email: formData.get('email') || document.getElementById('email')?.value || '',
+        phone: formData.get('phone') || document.getElementById('phone')?.value || '',
+        message: formData.get('message') || document.getElementById('message')?.value || ''
+    };
+
+    try {
+        const res = await fetch('/api/hub/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(() => ({}));
+
+        if (res.ok) {
+            if (btn) {
+                btn.innerHTML = '<i class="fas fa-check"></i> <span>Message Sent</span>';
+                btn.style.background = '#10B981';
+                btn.style.borderColor = '#10B981';
+                btn.style.color = '#ffffff';
+            }
+            if (feedback) {
+                feedback.style.color = '#10B981';
+                feedback.textContent = data.message || 'Message received. Ziad will follow up via WhatsApp or email.';
+            }
+            if (form) form.reset();
+        } else {
+            throw new Error(data.error || 'Submission failed');
+        }
+    } catch (err) {
         if (btn) {
-            btn.innerHTML = '<i class="fas fa-check"></i> <span>Message Sent</span>';
-            btn.style.background = '#10B981';
-            btn.style.borderColor = '#10B981';
-            btn.style.color = '#ffffff';
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Send Direct Message</span>';
+            btn.disabled = false;
         }
         if (feedback) {
-            feedback.style.color = '#10B981';
-            feedback.textContent = 'Message received. Ziad will follow up via WhatsApp or email.';
+            feedback.style.color = '#EF4444';
+            feedback.textContent = 'Submission error. Please email directly at ziad.taha3456@gmail.com';
         }
-        const form = document.getElementById('contactForm');
-        if (form) form.reset();
-
+    } finally {
         setTimeout(() => {
             if (btn) {
                 btn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Send Direct Message</span>';
@@ -123,6 +151,6 @@ function handleFormSubmit(e) {
                 btn.style.color = '';
                 btn.disabled = false;
             }
-        }, 4000);
-    }, 500);
+        }, 5000);
+    }
 }

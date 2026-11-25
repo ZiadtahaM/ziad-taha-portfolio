@@ -1,35 +1,30 @@
-# Ziad Taha: Developer Portfolio
+# Ziad Taha - Developer Portfolio
 
+Static portfolio site for Ziad Taha, a full-stack developer based in Alexandria, Egypt, working with Angular, NestJS and TypeScript (about 2 years with Angular, about 1 year with NestJS).
 
-## Visual Preview
-
-<div align="center">
-  <img src="docs/images/preview.png" alt="Personal Web Engineering Portfolio Interface Preview" width="100%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
-</div>
-
-
-This repository contains the static portfolio site for **Ziad Taha**, a full-stack engineer and system architect based in Egypt and working remotely worldwide. The site is a direct entry point to a broader GitHub portfolio spanning AI gateways, educational systems, e-commerce, operational desktop workstations, Node.js/NestJS APIs, React/Angular applications, and Three.js WebGL systems.
+Live site: https://ziadtaham.github.io/ziad-taha-portfolio/
 
 ## Repository contents
 
 | File | Purpose |
 |---|---|
-| `index.html` | Portfolio document structure and content |
+| `index.html` | Portfolio structure and content |
 | `app.js` | Client-side interactions |
+| `css/` | Stylesheets |
 
 ## Local preview
-
-Open `index.html` using a static web server during development. For example:
 
 ```bash
 npx serve .
 ```
 
-## Portfolio standards
-
-Keep external project links current, avoid claiming unverified production metrics, and use compressed, descriptive image assets with meaningful alternative text. If a deployment workflow is added, it should run a basic HTML validation and link check before publishing.
-
 ## Highlighted work
 
-The wider portfolio includes FaceMark attendance operations, Edu-Pro education systems, Flowdesk Egypt booking operations, multilingual Arabic e-commerce experiments, and interactive WebGL work. Visit the profile repositories for source-level project evidence.
+- **FaceMark** - face-recognition attendance prototype (NestJS backend, 45 Jest unit tests passing locally; hosting and end-to-end recognition not yet verified)
+- **Al-Baraa educational platform** - prototype with 7 tests
+- **ecommerce-fullstack-app** - Angular 17 SSR storefront built on a third-party commerce API
+- **Portfolio-3D** - interactive Three.js portfolio
 
+## Notes
+
+Project descriptions use verified scope only. No production metrics, client totals or uptime figures are claimed.

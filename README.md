@@ -1,6 +1,6 @@
 # Ziad Taha - Developer Portfolio
 
-Static portfolio site for Ziad Taha, a full-stack developer based in Alexandria, Egypt, working with Angular, NestJS and TypeScript (about 2 years with Angular, about 1 year with NestJS).
+Static portfolio site for Ziad Taha, a full-stack developer for clients worldwide, working with Angular, NestJS and TypeScript (about 2 years with Angular, about 1 year with NestJS).
 
 Live site: https://ziadtaham.github.io/ziad-taha-portfolio/
 
